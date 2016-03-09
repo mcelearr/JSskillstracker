@@ -1,5 +1,7 @@
 # JS Skills Tracker
 ## One-liner
+
+[![Join the chat at https://gitter.im/mcelearr/JSskillstracker](https://badges.gitter.im/mcelearr/JSskillstracker.svg)](https://gitter.im/mcelearr/JSskillstracker?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 JS Skills Tracker is an curated repository of JS knowledge that enables individual users to track their progress.
 
 ## Ideas
