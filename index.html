@@ -12,6 +12,9 @@
 		<!-- D3.js -->
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js" charset="utf-8"></script>
 
+		<!-- jQuery -->
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
 		<!-- Bootstrap -->
 		<!-- Latest compiled and minified CSS -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
@@ -26,14 +29,50 @@
 	<body>
 				<div class="radarChart"></div>
 				<div class="skills">
-					<h1>Hello</h1>
-						<h2>Skill 1</h2>
-							<h3>Sub-skill 1</h3>
-								<p>Comments and notes. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-							<h3>Sub-skill 2</h3>
-								<p>Comments and notes. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-							<h3>Sub-skill 3</h3>
-								<p>Comments and notes. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<div class="panel-group" id="accordion">
+					  <div class="panel panel-default">
+					    <div class="panel-heading">
+					      <h4 class="panel-title">
+					        <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+					        Collapsible Group 1</a>
+					      </h4>
+					    </div>
+					    <div id="collapse1" class="panel-collapse collapse in">
+					      <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+					      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+					      minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+					      commodo consequat.</div>
+					    </div>
+					  </div>
+					  <div class="panel panel-default">
+					    <div class="panel-heading">
+					      <h4 class="panel-title">
+					        <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+					        Collapsible Group 2</a>
+					      </h4>
+					    </div>
+					    <div id="collapse2" class="panel-collapse collapse">
+					      <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+					      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+					      minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+					      commodo consequat.</div>
+					    </div>
+					  </div>
+					  <div class="panel panel-default">
+					    <div class="panel-heading">
+					      <h4 class="panel-title">
+					        <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+					        Collapsible Group 3</a>
+					      </h4>
+					    </div>
+					    <div id="collapse3" class="panel-collapse collapse">
+					      <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+					      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+					      minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+					      commodo consequat.</div>
+					    </div>
+					  </div>
+					</div>
 				</div>
 
 		<script src="radarChart.js"></script>
@@ -90,5 +129,6 @@
 			//Call function to draw the Radar chart
 			RadarChart(".radarChart", data, radarChartOptions);
 		</script>
+
 	</body>
 </html>
