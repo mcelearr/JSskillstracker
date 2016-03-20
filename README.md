@@ -6,7 +6,7 @@ JS Skills Tracker is an curated repository of JS knowledge that enables individu
 
 ## Ideas
 ### Interface
-[Radar chart](http://bl.ocks.org/nbremer/21746a9668ffdf6d8242) or other infographic type UI. Twelveish skills, each one on a different spoke, with the spoke sub-divided into three segments growing more difficult as you go further out.
+[Radar chart](http://bl.ocks.org/nbremer/21746a9668ffdf6d8242). Twelveish skills, each one on a different spoke. This sits on the left-hand side. On the right-hand side is the breakdown of the different skills into subskills. The spoke completeness is out of 100%. The percentage completeness is based on the percentage of sub-skills that the user indicates are complete for that skill. The sub-skills do not have to be 'completed' in any particular order.
 ### Login
 Github API for user authenitcation.
 ### Progress
