@@ -63,6 +63,7 @@
 * fat arrows
 * template strings
 * let, const
+* Symbols
 
 ### JS Libraries
 * JQuery
