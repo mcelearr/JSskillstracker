@@ -5,10 +5,9 @@
 * Booleans
 
 ### Advanced data types
-* Undefined and null
 * Arrays
+* Undefined and null
 * Objects
-* Type coersion
 
 ### Operators
 * Arithmetic operators
