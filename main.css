@@ -17,6 +17,10 @@ body {
   float: left;
 }
 
+.skills {
+  float: right;
+}
+
 .tooltip {
   fill: #333333;
 }

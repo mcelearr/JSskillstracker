@@ -5,10 +5,9 @@
 * Booleans
 
 ### Advanced data types
-* Undefined and null
 * Arrays
+* Undefined and null
 * Objects
-* Type coersion
 
 ### Operators
 * Arithmetic operators
@@ -73,3 +72,27 @@
 ### Functional programming
 * Closures
 * Promises
+
+```javascript
+var data = [
+      [
+      {axis:"Basic data types",value:0.5},
+      {axis:"Advanced data types",value:0.5},
+      {axis:"Operators",value:0.5},
+      {axis:"Functions",value:0.4},
+      {axis:"Looping",value:0.5},
+      {axis:"Control flow",value:0.3},
+      {axis:"Basic objects",value:0.4},
+      {axis:"Array methods",value:0.5},
+      {axis:"String methods",value:0.3},
+      {axis:"Higher-order functions",value:0.3},
+      {axis:"Advanced objects",value:0.2},
+      {axis:"In-built objects",value:0.3},
+      {axis:"Style",value:0.3},
+      {axis:"Naming conventions",value:0.2},
+      {axis:"ECMA 6",value:0.2},
+      {axis:"JS Libraries",value:0.1},
+      {axis:"Functional programming",value:0.1}
+      ]
+    ];
+```
