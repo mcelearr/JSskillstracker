@@ -13,14 +13,15 @@ body {
   fill: #333333;
 }
 
-.radarChart {
-  float: left;
-}
-
-.skills {
-  float: right;
-}
-
 .tooltip {
   fill: #333333;
+}
+
+.hidden {
+     display:none;
+}
+
+.panel-body a {
+     font-size: 18px;
+     font-weight: bold;
 }
