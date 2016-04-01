@@ -1,6 +1,7 @@
 var http = require("http");
 var fs = require("fs");
 var url = require("url");
+var reqIP = require("request-ip");
 var port = 80;
 var mimes = {
   "html": "text/html",
@@ -18,7 +19,8 @@ var server = http.createServer(function (request, response){
   var headers = request.headers;
   var methods = request.method;
   var body = [];
-  console.log(request.headers);
+  var clIP = reqIP.getClientIp(request);
+  console.log(clIP);
   request.on('error', function(err){
     console.log(err);
   }).on('data', function(chunk){
