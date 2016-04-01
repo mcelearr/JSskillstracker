@@ -1,7 +1,7 @@
 var http = require("http");
 var fs = require("fs");
 var url = require("url");
-var port = 8000;
+var port = 80;
 var mimes = {
   "html": "text/html",
   "css": "text/css",
