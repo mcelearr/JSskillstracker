@@ -2,7 +2,8 @@
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/ >
-		<title>Smoothed D3.js Radar Chart</title>
+		<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
+		<title>Skills Tracker</title>
 		<link rel="stylesheet" type="text/css" href="main.css">
 
 		<!-- Google fonts -->
@@ -27,198 +28,13 @@
 
 	</head>
 	<body>
-				<div class="row">
-				<div class="col-md-6">
-						<div class="radarChart"></div>
+			<div class="holder">
+				<div class="col-md-8" id="login">
+					<a href="https://www.github.com/login/oauth/authorize?client_id=44bca640b9dc9b0560bc" id="link_login">
+						<h1 style="font-size:4em;">Log in with GitHub!</h1>
+					</a>
 				</div>
-				<div class="col-md-6">
-					<div class="skills">
-						<div class="panel-group" id="accordion">
-						  <div class="panel panel-default">
-						    <div class="panel-heading">
-						      <h4 class="panel-title">
-						        <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
-						        Basic data types</a>
-						      </h4>
-						    </div>
-							    <div id="collapse1" class="panel-collapse collapse in">
-							      <div class="panel-body">
-											<h3>Numbers</h3>
-											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-								      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-											<a href="#" class="btn btn-info btn-lg pull-right" id="button" onclick="change()">
-												<span class="glyphicon glyphicon-ok"></span> Complete
-											</a>
-										</div>
-										<div class="panel-body">
-											<h3>Strings</h3>
-											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-											sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-											<a href="#" class="btn btn-info btn-lg pull-right">
-												<span class="glyphicon glyphicon-ok"></span> Complete
-											</a>
-										</div>
-										<div class="panel-body">
-											<h3>Booleans</h3>
-											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-											sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-											<a href="#" class="btn btn-info btn-lg pull-right">
-												<span class="glyphicon glyphicon-ok"></span> Complete
-											</a>
-										</div>
-									</div>
-						  </div>
-						  <div class="panel panel-default">
-						    <div class="panel-heading">
-						      <h4 class="panel-title">
-						        <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
-						        Advanced data types</a>
-						      </h4>
-						    </div>
-						    <div id="collapse2" class="panel-collapse collapse">
-									<div class="panel-body">
-										<h3>Arrays</h3>
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-										sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-										<a href="#" class="btn btn-info btn-lg pull-right">
-											<span class="glyphicon glyphicon-ok"></span> Complete
-										</a>
-									</div>
-									<div class="panel-body">
-										<h3>Objects</h3>
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-										sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-										<a href="#" class="btn btn-info btn-lg pull-right">
-											<span class="glyphicon glyphicon-ok"></span> Complete
-										</a>
-									</div>
-									<div class="panel-body">
-										<h3>Undefined and null</h3>
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-										sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-										<a href="#" class="btn btn-info btn-lg pull-right">
-											<span class="glyphicon glyphicon-ok"></span> Complete
-										</a>
-									</div>
-						    </div>
-						  </div>
-						  <div class="panel panel-default">
-						    <div class="panel-heading">
-						      <h4 class="panel-title">
-						        <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
-						        Operators</a>
-						      </h4>
-						    </div>
-						    <div id="collapse3" class="panel-collapse collapse">
-									<div class="panel-body">
-										<h3>Arithmetic operators</h3>
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-										sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-										<a href="#" class="btn btn-info btn-lg pull-right">
-											<span class="glyphicon glyphicon-ok"></span> Complete
-										</a>
-									</div>
-									<div class="panel-body">
-										<h3>Logical operators</h3>
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-										sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-										<a href="#" class="btn btn-info btn-lg pull-right">
-											<span class="glyphicon glyphicon-ok"></span> Complete
-										</a>
-									</div>
-									<div class="panel-body">
-										<h3>Other operators</h3>
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-										sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-										<a href="#" class="btn btn-info btn-lg pull-right">
-											<span class="glyphicon glyphicon-ok"></span> Complete
-										</a>
-									</div>
-						    </div>
-						  </div>
-						</div>
-					</div>
-				</div>
+				<a href="test.html">testing domain check</a> <!-- kill this -->
 			</div>
-
-		<script src="radarChart.js"></script>
-		<script>
-			//////////////////////////////////////////////////////////////
-			//////////////////////// Set-Up //////////////////////////////
-			//////////////////////////////////////////////////////////////
-
-			var margin = {top: 100, right: 100, bottom: 100, left: 100},
-				width = Math.min(700, window.innerWidth - 10) - margin.left - margin.right,
-				height = Math.min(width, window.innerHeight - margin.top - margin.bottom - 20);
-
-			//////////////////////////////////////////////////////////////
-			////////////////////////// Data //////////////////////////////
-			//////////////////////////////////////////////////////////////
-
-			var skills = ["Basic data types","Advanced data types","Operators"]
-
-			var subskills = [
-				{skill:skills[0],subskill:"Numbers",status:1},
-				{skill:skills[0],subskill:"Strings",status:1},
-				{skill:skills[0],subskill:"Booleans",status:1},
-				{skill:skills[1],subskill:"Arrays",status:1},
-				{skill:skills[1],subskill:"Objects",status:1},
-				{skill:skills[1],subskill:"Undefined and null",status:1},
-				{skill:skills[2],subskill:"Arithmetic operators",status:1},
-				{skill:skills[2],subskill:"Logical operators",status:1},
-				{skill:skills[2],subskill:"Other operators",status:1},
-			]
-
-			var data = [
-			      [
-			      {axis:skills[0],value:getAverage(skills[0])},
-			      {axis:skills[1],value:getAverage(skills[1])},
-			      {axis:skills[2],value:getAverage(skills[2])}
-			      ]
-			    ];
-
-			function getAverage(skill){
-
-			var filteredSkills = [];
-
-			  for (var i = 0; i < subskills.length; i++){
-			    if (subskills[i].skill == skill){
-			      filteredSkills.push(subskills[i]);
-			    }
-			  }
-
-			var total = 0;
-			var average = 0;
-
-			  for (var j = 0; j < filteredSkills.length; j++){
-			    total += filteredSkills[j].status;
-			    average = total/filteredSkills.length;
-			  }
-
-			return average;
-			}
-
-			//////////////////////////////////////////////////////////////
-			//////////////////// Draw the Chart //////////////////////////
-			//////////////////////////////////////////////////////////////
-
-			var color = d3.scale.ordinal()
-				.range(["#EDC951","#CC333F","#00A0B0"]);
-
-			var radarChartOptions = {
-			  w: width,
-			  h: height,
-			  margin: margin,
-			  maxValue: 1,
-			  levels: 5,
-			  roundStrokes: true,
-			  color: color
-			};
-			//Call function to draw the Radar chart
-			RadarChart(".radarChart", data, radarChartOptions);
-		</script>
-
-		<script src="skillsTracker.js"></script>
-
 	</body>
 </html>

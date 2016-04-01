@@ -24,3 +24,24 @@ body {
 .tooltip {
   fill: #333333;
 }
+
+.holder{
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: #ffffff;
+}
+#login{
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  background-color: #dee1ff;
+  top: 20vh;
+  height: 40vh;
+  border-radius: 2vw;
+}
+#link_login{
+  display: flex;
+  justify-content: center;
+}

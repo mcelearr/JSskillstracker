@@ -18,6 +18,7 @@ var server = http.createServer(function (request, response){
   var headers = request.headers;
   var methods = request.method;
   var body = [];
+  console.log(request.headers.host);
   request.on('error', function(err){
     console.log(err);
   }).on('data', function(chunk){
@@ -38,14 +39,24 @@ var server = http.createServer(function (request, response){
     else if (url.parse(request.url).query){
       var q = url.parse(request.url).query.split('&').map((el)=> el.substring(el.indexOf('=')+1));
       if (q[0]=='login'){
-        response.writeHead(301, {Location: 'https://github.com/login/oauth/authorize','client_id':'//redacted',
-                                'redirect_uri':'https://www.coudrew.ca/'});
+        /*var req = http.request({
+          'protocol':'https',
+          'host':'github.com',
+          'path':'/login/oauth/authorize',
+          'connection':'keep-alive',
+          'headers':{'client_id':'66afe030254d5293c677'}
+        },(res)=>{res.writeHead(301,{Location:'https://github.com/login/oauth'})}*/
+        response.writeHead(301, {Location: 'https://github.com/login/oauth/authorize?client_id=44bca640b9dc9b0560bc'});
         response.end();
+
+
+        //response.writeHead(301,{Location:'https://github.com/login/oauth/authorize?client_id=66afe030254d5293c677'});
+        //response.end();
       };
-      console.log(q);
+      //console.log(q);
     }
     else {
-      console.log(response.headers);
+      //console.log(response.headers);
       response.writeHead(200, {'Content-Type': contentType});
       response.end(fs.readFileSync(serveFile));
     };
