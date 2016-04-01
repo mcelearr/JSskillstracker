@@ -18,7 +18,7 @@ var server = http.createServer(function (request, response){
   var headers = request.headers;
   var methods = request.method;
   var body = [];
-  console.log(request.headers.host);
+  console.log(request.headers);
   request.on('error', function(err){
     console.log(err);
   }).on('data', function(chunk){
