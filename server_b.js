@@ -74,14 +74,17 @@ var server = http.createServer(function (request, response){
             method: 'POST',
             headers: {'accept':'application/json'}
           };
-          var auth;
+          var auth='';
           var auth_post = https.request(post_options, function(res){
             res.on('data', function(chunk){
-              auth = chunk;
+              auth += chunk;
             });
+            res.on('end', function){
+              console.log(auth);
+            }
           });
           auth_post.write();
-          auth_post.end(console.log(auth));
+          auth_post.end();
         };
         };
       response.writeHead(200, {'Content-Type': contentType});
