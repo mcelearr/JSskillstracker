@@ -71,7 +71,8 @@ var server = http.createServer(function (request, response){
             protocol: 'https',
             host: 'github.com',
             path: '/login/oauth/access_token?client_id='+client_id+'&client_secret='+client_secret+'&code='+q.code+'&state='+state,
-            method: 'POST'
+            method: 'POST',
+            headers: {'accept':'application/json'}
           };
           var auth;
           var auth_post = https.request(post_options, function(res){
@@ -80,8 +81,7 @@ var server = http.createServer(function (request, response){
             });
           });
           auth_post.write();
-          auth_post.end();
-          console.log(auth);
+          auth_post.end(console.log(auth));
         };
         };
       response.writeHead(200, {'Content-Type': contentType});
