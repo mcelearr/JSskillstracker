@@ -68,8 +68,9 @@ var server = http.createServer(function (request, response){
         }
         if (q.code&&q.state==state){
           var post_data = 'client_id='+client_id+'&client_secret='+client_secret+'&code='+q.code+'&state='+state;
+          console.log(post_data);
           var post_options = {
-            protocol: 'https',
+            protocol: 'https:',
             host: 'github.com',
             path: '/login/oauth/access_token',
             method: 'POST',
