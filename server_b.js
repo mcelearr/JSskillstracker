@@ -79,9 +79,9 @@ var server = http.createServer(function (request, response){
             res.on('data', function(chunk){
               auth += chunk;
             });
-            res.on('end', function()){
+            res.on('end', function(){
               console.log(auth);
-            }
+            });
           });
           auth_post.write();
           auth_post.end();
