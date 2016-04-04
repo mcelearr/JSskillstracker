@@ -67,10 +67,11 @@ var server = http.createServer(function (request, response){
           response.end();
         }
         if (q.code&&q.state==state){
+          var post_data = 'client_id='+client_id+'&client_secret='+client_secret+'&code='+q.code+'&state='+state;
           var post_options = {
             protocol: 'https',
             host: 'github.com',
-            path: '/login/oauth/access_token?client_id='+client_id+'&client_secret='+client_secret+'&code='+q.code+'&state='+state,
+            path: '/login/oauth/access_token',
             method: 'POST',
             headers: {'accept':'application/json'}
           };
@@ -83,7 +84,7 @@ var server = http.createServer(function (request, response){
               console.log(auth);
             });
           });
-          auth_post.write();
+          auth_post.write(post_data);
           auth_post.end();
         };
         };
