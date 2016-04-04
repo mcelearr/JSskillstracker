@@ -16,6 +16,7 @@ Array.prototype.queryObj = function(){
 //host, port, client_id, and client_secret must be passed as last 4 arguments when launched
 var settings = process.argv.slice(process.argv.length-4).queryObj();
 var http = require("http");
+var https = require("https");
 var fs = require("fs");
 var url = require("url");
 var port = settings.port;
@@ -67,13 +68,13 @@ var server = http.createServer(function (request, response){
         }
         if (q.code&&q.state==state){
           var post_options = {
-            protocol: 'http',
+            protocol: 'https',
             host: 'github.com',
             path: '/login/oauth/access_token?client_id='+client_id+'&client_secret='+client_secret+'&code='+q.code+'&state='+state,
             method: 'POST'
           };
           var auth;
-          var auth_post = http.request(post_options, function(res){
+          var auth_post = https.request(post_options, function(res){
             res.on('data', function(chunk){
               auth = chunk;
             });
