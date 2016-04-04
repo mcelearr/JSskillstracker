@@ -67,7 +67,7 @@ var server = http.createServer(function (request, response){
         }
         if (q.code&&q.state==state){
           var post_options = {
-            protocol: 'https',
+            protocol: 'http',
             host: 'github.com',
             path: '/login/oauth/access_token?client_id='+client_id+'&client_secret='+client_secret+'&code='+q.code+'&state='+state,
             method: 'POST'
@@ -80,6 +80,8 @@ var server = http.createServer(function (request, response){
           });
           auth_post.write();
           auth_post.end();
+          response.writeHead(200, {'Content-Type': 'text/html'});
+          response.end(fs.readFileSync('/app/authorize/auth.html'));
           console.log(auth);
         };
         };
