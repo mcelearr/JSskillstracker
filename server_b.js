@@ -16,8 +16,8 @@ function getUser(token){
   });
   get_user.setHeader('authorization', token);
   get_user.setHeader('User-Agent', 'jskt');
-  //get_user.end();
-  console.log(get_user);
+  get_user.end();
+  //console.log(get_user);
 };
 //helpers
 Array.prototype.queryObj = function(){
