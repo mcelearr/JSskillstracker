@@ -2,11 +2,11 @@ function getUser(token){
   var get_user_options = {
   protocol: 'https:',
   host: 'api.github.com',
-  path: '/user',
+  path: '/user?access_token='+token,
   method: 'GET',
   headers: {'user-agent':'jstk'}
   }
-  var get_user_body = "Authorization="+token;
+  //var get_user_body = "Authorization="+token;
   var get_user = https.request(get_user_options, function(res){
     res.on('data', function(chunk){
       user += chunk;
@@ -16,7 +16,7 @@ function getUser(token){
     });
   });
   //console.log(get_user.headers);
-  get_user.write(get_user_body);
+  get_user.write();
   get_user.end();
 };
 //helpers
