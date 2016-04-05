@@ -108,11 +108,13 @@ var server = http.createServer(function (request, response){
                 console.log(user);
               });
             };
-          });
-	        get_user.setHeader('authorization', token);
-	        get_user.setHeader('User-Agent', 'jskt');
-          //get_user.end();
-	        console.log(get_user.headers);
+            get_user.setHeader('authorization', token);
+            get_user.setHeader('User-Agent', 'jskt');
+            //get_user.end();
+            console.log(get_user.headers);
+          };
+        });
+
         };
       };
     };
