@@ -114,7 +114,8 @@ var server = http.createServer(function (request, response){
           //get_user.end();
 	        console.log(get_user.headers);
         };
-        };
+      };
+    };
       response.writeHead(200, {'Content-Type': contentType});
       response.end(fs.readFileSync(serveFile));
     };
