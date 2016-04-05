@@ -64,8 +64,8 @@ var server = http.createServer(function (request, response){
           response.writeHead(301, {Location: 'https://github.com/login/oauth/authorize?client_id='+client_id+'&scope=user&state='+state});
           response.end();
         }
-        if (q.code && q.state == state){
-          var post_data = 'client_id='+client_id+'&client_secret='+client_secret+'&code='+q.code+'&state='+state;
+        if (q.code){
+          var post_data = 'client_id='+client_id+'&client_secret='+client_secret+'&code='+q.code;
           console.log(post_data);
           var post_options = {
             protocol: 'https:',
