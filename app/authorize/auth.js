@@ -13,6 +13,6 @@ function login(){
   var req = new XMLHttpRequest();
   var state_str = setState();
   //console.log(req, state_str);
-  req.open('GET', 'http://www.coudrew.ca/index.html?login=1&state='+state_str);
+  req.open('GET', 'http://www.coudrew.ca/index.html?set_state='+state_str);
   req.send();
 };

@@ -53,11 +53,15 @@ var server = http.createServer(function (request, response){
     else {
       if (url.parse(request.url).query){//check for queries in request and handle them. does this need it's own elseif?
         var q = url.parse(request.url).query.split('&').queryObj();
+        if (q.set_state){
+          state = q.set_state;
+          response.writeHead(301, {Location: 'http://www.coudrew.ca/index.html?login=1'});
+          response.end();
+        }
         if (q.login && q.login == 1){
           state = q.state;
           console.log(state);
-          response.writeHead(301, {Location: 'https://github.com/login/oauth/authorize?client_id='+client_id+'&scope=user&state='+state,
-                                  'Access-Control-Allow-Origin': 'http://www.coudrew.ca'});
+          response.writeHead(301, {Location: 'https://github.com/login/oauth/authorize?client_id='+client_id+'&scope=user&state='+state});
           response.end();
         }
         if (q.code && q.state == state){
