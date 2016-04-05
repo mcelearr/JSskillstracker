@@ -12,6 +12,8 @@ var https = require("https");
 var fs = require("fs");
 var url = require("url");
 var port = settings.port;
+var auth = '';
+var token = '';
 var mimes = {
   "html": "text/html",
   "css": "text/css",
@@ -66,21 +68,23 @@ var server = http.createServer(function (request, response){
         }
         if (q.code){
           var post_data = 'client_id='+client_id+'&client_secret='+client_secret+'&code='+q.code;
-          console.log(post_data);
+          //console.log(post_data);
           var post_options = {
             protocol: 'https:',
             host: 'github.com',
             path: '/login/oauth/access_token',
-            method: 'POST',
-            headers: {'accept':'application/json'}
+            method: 'POST'
+            //headers: {'accept':'application/json'}
           };
-          var auth='';
           var auth_post = https.request(post_options, function(res){
             res.on('data', function(chunk){
               auth += chunk;
             });
             res.on('end', function(){
-              console.log(auth);
+              auth = auth.split('&').queryObj();
+              token = auth.access_token;
+	      console.log(auth);
+	      console.log(token);
             });
           });
           auth_post.write(post_data);
@@ -88,9 +92,7 @@ var server = http.createServer(function (request, response){
           //response.writeHead(301, {Location: settings.host+'/app/landing.html'});
           //response.end();
         };
-        if (q.get_user){
-          response.end(auth);
-        }
+	
         };
       response.writeHead(200, {'Content-Type': contentType});
       response.end(fs.readFileSync(serveFile));
