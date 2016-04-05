@@ -108,11 +108,11 @@ var server = http.createServer(function (request, response){
               console.log(user);
             });
           });
-	  get_user.setHeader(Authorization, token);
-	  get_user.setHeader(User-Agent, 'jskt');
+	        get_user.setHeader('authorization', token);
+	        get_user.setHeader('User-Agent', 'jskt');
           //get_user.send();
           //get_user.end();
-	console.log(get_user);
+	        console.log(get_user.headers);
         };
         };
       response.writeHead(200, {'Content-Type': contentType});
