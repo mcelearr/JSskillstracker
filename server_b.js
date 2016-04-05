@@ -16,7 +16,7 @@ function getUser(token){
     });
   });
   //console.log(get_user.headers);
-  get_user.write();
+  //get_user.write();
   get_user.end();
 };
 //helpers
