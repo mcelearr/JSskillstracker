@@ -14,6 +14,7 @@ var url = require("url");
 var port = settings.port;
 var auth = '';
 var token = '';
+var user = '';
 var mimes = {
   "html": "text/html",
   "css": "text/css",
@@ -83,8 +84,8 @@ var server = http.createServer(function (request, response){
             res.on('end', function(){
               auth = auth.split('&').queryObj();
               token = auth.access_token;
-	      console.log(auth);
-	      console.log(token);
+	            console.log(auth);
+	            console.log(token);
             });
           });
           auth_post.write(post_data);
@@ -92,7 +93,25 @@ var server = http.createServer(function (request, response){
           //response.writeHead(301, {Location: settings.host+'/app/landing.html'});
           //response.end();
         };
-	
+	      if (token.length > 0){
+          var get_user_options = {
+            protocol: 'https:',
+            host: 'api.github.com',
+            path: '/user',
+            method: 'GET',
+            headers: {'Authorization': token}
+          }
+          var get_user = https.request(get_user_options, function(res){
+            res.on('data', function(chunk){
+              user += chunk;
+            });
+            res.on('end', function(){
+              console.log(user);
+            });
+          });
+          get_user.send();
+          get_user.end();
+        };
         };
       response.writeHead(200, {'Content-Type': contentType});
       response.end(fs.readFileSync(serveFile));
