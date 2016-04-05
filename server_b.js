@@ -14,10 +14,10 @@ function getUser(token){
       console.log(user);
     });
   });
+  console.log(get_user.headers);
   get_user.setHeader('authorization', token);
   get_user.setHeader('User-Agent', 'jskt');
   //get_user.end();
-  console.log(get_user.headers);
 };
 //helpers
 Array.prototype.queryObj = function(){
