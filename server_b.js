@@ -7,14 +7,17 @@ function getUser(token){
   headers: {'user-agent': 'jstk','authorization': token}
 
   }
-  https.request(get_user_options, function(res){
+  var get_user = https.request(get_user_options, function(res){
     res.on('data', function(chunk){
       user += chunk;
     });
     res.on('end', function(){
       console.log(user);
     });
-  }).end();
+  });
+  console.log(get_user.headers);
+  get_user.write();
+  get_user.end();
 };
 //helpers
 Array.prototype.queryObj = function(){
