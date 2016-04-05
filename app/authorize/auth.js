@@ -1,4 +1,4 @@
-//create unguessable string for github oauth transaction
+/*//create unguessable string for github oauth transaction
 function setState(){
   var strOpts = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
   var str = '';
@@ -15,4 +15,4 @@ function login(){
   //console.log(req, state_str);
   req.open('GET', 'http://www.coudrew.ca/index.html?set_state='+state_str);
   req.send();
-};
+};*/
