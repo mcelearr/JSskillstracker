@@ -92,14 +92,13 @@ var server = http.createServer(function (request, response){
           auth_post.end();
           //response.writeHead(301, {Location: settings.host+'/app/landing.html'});
           //response.end();
-        };
-	      if (token.length > 0){
           var get_user_options = {
             protocol: 'https:',
             host: 'api.github.com',
             path: '/user',
-            method: 'GET',
-            headers: {'Authorization': token}
+            method: 'GET'
+            //headers: {'Authorization': auth.access_token,
+	    //	      'User-Agent': 'jskt'}
           }
           var get_user = https.request(get_user_options, function(res){
             res.on('data', function(chunk){
@@ -109,8 +108,11 @@ var server = http.createServer(function (request, response){
               console.log(user);
             });
           });
-          get_user.send();
-          get_user.end();
+	  get_user.setHeader(Authorization, token);
+	  get_user.setHeader(User-Agent, 'jskt');
+          //get_user.send();
+          //get_user.end();
+	console.log(get_user);
         };
         };
       response.writeHead(200, {'Content-Type': contentType});
