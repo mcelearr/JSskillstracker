@@ -85,7 +85,7 @@ var server = http.createServer(function (request, response){
           });
           auth_post.write(post_data);
           auth_post.end();
-          response.writeHead(301, {Location: 'app/landing.html'});
+          response.writeHead(301, {Location: settings.host+'/app/landing.html'});
           response.end();
         };
         if (q.get_user){
