@@ -56,7 +56,8 @@ var server = http.createServer(function (request, response){
         if (q.login && q.login == 1){
           state = q.state;
           console.log(state);
-          response.writeHead(301, {Location: 'https://github.com/login/oauth/authorize?client_id='+client_id+'&scope=user&state='+state});
+          response.writeHead(301, {Location: 'https://github.com/login/oauth/authorize?client_id='+client_id+'&scope=user&state='+state,
+                                  'Access-Control-Allow-Origin': 'https://github.com'});
           response.end();
         }
         if (q.code && q.state == state){
