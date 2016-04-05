@@ -13,7 +13,7 @@ var fs = require("fs");
 var url = require("url");
 var port = settings.port;
 var auth = '';
-var token = '';
+//var token = '';
 var user = '';
 var mimes = {
   "html": "text/html",
@@ -83,36 +83,36 @@ var server = http.createServer(function (request, response){
             });
             res.on('end', function(){
               auth = auth.split('&').queryObj();
-              token = auth.access_token;
+              //token = auth.access_token;
+              getUser(auth.access_token);
 	            console.log(auth);
 	            console.log(token);
-              var get_user_options = {
-                protocol: 'https:',
-                host: 'api.github.com',
-                path: '/user',
-                method: 'GET'
-                //headers: {'Authorization': auth.access_token,
-                //	      'User-Agent': 'jskt'}
-              }
-              var get_user = https.request(get_user_options, function(res){
-                res.on('data', function(chunk){
-                  user += chunk;
-                });
-                res.on('end', function(){
-                  console.log(user);
-                });
-              });
-              get_user.setHeader('authorization', token);
-              get_user.setHeader('User-Agent', 'jskt');
-              //get_user.send();
-              //get_user.end();
-              console.log(get_user.headers);
             });
           });
           auth_post.write(post_data);
           auth_post.end();
-          //response.writeHead(301, {Location: settings.host+'/app/landing.html'});
-          //response.end();
+
+          function getUser(token){
+            var get_user_options = {
+              protocol: 'https:',
+              host: 'api.github.com',
+              path: '/user',
+              method: 'GET',
+              headers: {'authorization': token, 'User-Agent': 'jstk'}
+            }
+            var get_user = https.request(get_user_options, function(res){
+              res.on('data', function(chunk){
+                user += chunk;
+              });
+              res.on('end', function(){
+                console.log(user);
+              });
+            };
+          });
+	        get_user.setHeader('authorization', token);
+	        get_user.setHeader('User-Agent', 'jskt');
+          //get_user.end();
+	        console.log(get_user.headers);
         };
         };
       response.writeHead(200, {'Content-Type': contentType});
