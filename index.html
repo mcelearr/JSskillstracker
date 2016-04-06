@@ -110,8 +110,8 @@
 												<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
 												sed do eiusmod tempor incididunt ut labore</li>
 											</ul>
-											<a href="#" class="btn btn-info btn-lg pull-right" id="button1one" onclick="change()">
-												<span class="glyphicon glyphicon-ok"></span> Complete
+											<a href="#" class="btn btn-info btn-lg pull-right" id="button1one">
+												<span class="glyphicon glyphicon-remove"></span> Complete
 											</a>
 										</div>
 										<div class="panel-body">
@@ -128,8 +128,8 @@
 												<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
 												sed do eiusmod tempor incididunt ut labore</li>
 											</ul>
-											<a href="#" class="btn btn-info btn-lg pull-right">
-												<span class="glyphicon glyphicon-ok"></span> Complete
+											<a href="#" class="btn btn-info btn-lg pull-right" id="button1two">
+												<span class="glyphicon glyphicon-remove"></span> Complete
 											</a>
 										</div>
 										<div class="panel-body">
@@ -146,8 +146,8 @@
 												<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
 												sed do eiusmod tempor incididunt ut labore</li>
 											</ul>
-											<a href="#" class="btn btn-info btn-lg pull-right">
-												<span class="glyphicon glyphicon-ok"></span> Complete
+											<a href="#" class="btn btn-info btn-lg pull-right" id="button1three">
+												<span class="glyphicon glyphicon-remove"></span> Complete
 											</a>
 										</div>
 									</div>
@@ -174,8 +174,8 @@
 											<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
 											sed do eiusmod tempor incididunt ut labore</li>
 										</ul>
-										<a href="#" class="btn btn-info btn-lg pull-right">
-											<span class="glyphicon glyphicon-ok"></span> Complete
+										<a href="#" class="btn btn-info btn-lg pull-right" id="button2one">
+											<span class="glyphicon glyphicon-remove"></span> Complete
 										</a>
 									</div>
 									<div class="panel-body">
@@ -192,8 +192,8 @@
 											<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
 											sed do eiusmod tempor incididunt ut labore</li>
 										</ul>
-										<a href="#" class="btn btn-info btn-lg pull-right">
-											<span class="glyphicon glyphicon-ok"></span> Complete
+										<a href="#" class="btn btn-info btn-lg pull-right" id="button2two">
+											<span class="glyphicon glyphicon-remove"></span> Complete
 										</a>
 									</div>
 									<div class="panel-body">
@@ -210,8 +210,8 @@
 											<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
 											sed do eiusmod tempor incididunt ut labore</li>
 										</ul>
-										<a href="#" class="btn btn-info btn-lg pull-right">
-											<span class="glyphicon glyphicon-ok"></span> Complete
+										<a href="#" class="btn btn-info btn-lg pull-right" id="button2three">
+											<span class="glyphicon glyphicon-remove"></span> Complete
 										</a>
 									</div>
 						    </div>
@@ -238,8 +238,8 @@
 											<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
 											sed do eiusmod tempor incididunt ut labore</li>
 										</ul>
-										<a href="#" class="btn btn-info btn-lg pull-right">
-											<span class="glyphicon glyphicon-ok"></span> Complete
+										<a href="#" class="btn btn-info btn-lg pull-right" id="button3one">
+											<span class="glyphicon glyphicon-remove"></span> Complete
 										</a>
 									</div>
 									<div class="panel-body">
@@ -256,8 +256,8 @@
 											<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
 											sed do eiusmod tempor incididunt ut labore</li>
 										</ul>
-										<a href="#" class="btn btn-info btn-lg pull-right">
-											<span class="glyphicon glyphicon-ok"></span> Complete
+										<a href="#" class="btn btn-info btn-lg pull-right" id="button3two">
+											<span class="glyphicon glyphicon-remove"></span> Complete
 										</a>
 									</div>
 									<div class="panel-body">
@@ -274,8 +274,8 @@
 											<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
 											sed do eiusmod tempor incididunt ut labore</li>
 										</ul>
-										<a href="#" class="btn btn-info btn-lg pull-right">
-											<span class="glyphicon glyphicon-ok"></span> Complete
+										<a href="#" class="btn btn-info btn-lg pull-right" id="button3three">
+											<span class="glyphicon glyphicon-remove"></span> Complete
 										</a>
 									</div>
 						    </div>
@@ -303,14 +303,14 @@
 
 			var subskills = [
 				{skill:skills[0],subskill:"Numbers",button:"button1one",status:1},
-				{skill:skills[0],subskill:"Strings",status:1},
-				{skill:skills[0],subskill:"Booleans",status:1},
-				{skill:skills[1],subskill:"Arrays",status:1},
-				{skill:skills[1],subskill:"Objects",status:1},
-				{skill:skills[1],subskill:"Undefined and null",status:1},
-				{skill:skills[2],subskill:"Arithmetic operators",status:1},
-				{skill:skills[2],subskill:"Logical operators",status:1},
-				{skill:skills[2],subskill:"Other operators",status:1},
+				{skill:skills[0],subskill:"Strings",button:"button1two",status:1},
+				{skill:skills[0],subskill:"Booleans",button:"button1three",status:1},
+				{skill:skills[1],subskill:"Arrays",button:"button2one",status:1},
+				{skill:skills[1],subskill:"Objects",button:"button2two",status:1},
+				{skill:skills[1],subskill:"Undefined and null",button:"button2three",status:1},
+				{skill:skills[2],subskill:"Arithmetic operators",button:"button3one",status:1},
+				{skill:skills[2],subskill:"Logical operators",button:"button3two",status:1},
+				{skill:skills[2],subskill:"Other operators",button:"button3three",status:1},
 			]
 
 			var data = [
