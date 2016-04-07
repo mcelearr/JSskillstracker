@@ -1,3 +1,5 @@
+//old idea. don't want to throw out yet, don't want to use either
+
 /*//create unguessable string for github oauth transaction
 function setState(){
   var strOpts = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';

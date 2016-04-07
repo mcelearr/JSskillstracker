@@ -1,4 +1,13 @@
-function getUser(token){
+function random32(){
+  var str = '';
+  var str_opts = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+  for (i=0; i<=32; i++){
+    str += str_opts[Math.floor(Math.random()*62)];
+  };
+  return str;
+}
+
+function reqUser(token){
   var get_user_options = {
   protocol: 'https:',
   host: 'api.github.com',
@@ -6,7 +15,7 @@ function getUser(token){
   method: 'GET',
   headers: {'user-agent':'jstk'}
   }
-  //var get_user_body = "Authorization="+token;
+
   var get_user = https.request(get_user_options, function(res){
     res.on('data', function(chunk){
       user += chunk;
@@ -15,8 +24,6 @@ function getUser(token){
       console.log(user);
     });
   });
-  //console.log(get_user.headers);
-  //get_user.write();
   get_user.end();
 };
 //helpers
@@ -56,7 +63,14 @@ var server = http.createServer(function (request, response){
   var serveFile = url.parse(request.url).pathname.slice(1); //file to serve derived from url
   if (serveFile.length <= 1) serveFile = 'index.html'; //requests of '/' will default to index
   var contentType = mimes[url.parse(request.url).pathname.split('.')[1]]; //url checked against mimes to find content type
-
+  if (serveFile == 'index.html'){
+    if (request.headers.cookie){/*do a thing */};
+    if (!request.headers.cookie){
+      var cookie = random32();
+      response.writeHead(301, {Location: 'http://'+settings.host+'login.html', 'Set-Cookie': cookie});
+      response.end();
+    }
+  }
   //do not allow requests with TRACE or OPTIONS method
   if (request.method=='TRACE'||request.method=='OPTIONS'){
     response.writeHead(403, {'Content-Type':'text/plain'});
@@ -77,11 +91,6 @@ var server = http.createServer(function (request, response){
     else {
       if (url.parse(request.url).query){//check for queries in request and handle them. does this need it's own elseif?
         var q = url.parse(request.url).query.split('&').queryObj();
-        /*if (q.set_state){
-          state = q.set_state;
-          response.writeHead(301, {Location: 'http://www.coudrew.ca/index.html?login=1'});
-          response.end();
-        }*/
         if (q.login && q.login == 1){
           //state = q.state;
           //console.log(state);
@@ -90,13 +99,11 @@ var server = http.createServer(function (request, response){
         }
         if (q.code){
           var post_data = 'client_id='+client_id+'&client_secret='+client_secret+'&code='+q.code;
-          //console.log(post_data);
           var post_options = {
             protocol: 'https:',
             host: 'github.com',
             path: '/login/oauth/access_token',
             method: 'POST'
-            //headers: {'accept':'application/json'}
           };
           var auth_post = https.request(post_options, function(res){
             res.on('data', function(chunk){
@@ -104,8 +111,7 @@ var server = http.createServer(function (request, response){
             });
             res.on('end', function(){
               auth = auth.split('&').queryObj();
-              //token = auth.access_token;
-              getUser(auth.access_token);
+              reqUser(auth.access_token);
 	            console.log(auth);
 	            console.log(token);
             });
