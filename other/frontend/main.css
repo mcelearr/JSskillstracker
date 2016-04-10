@@ -26,7 +26,6 @@ body {
      font-weight: bold;
 }
 
-<<<<<<< HEAD
 .holder{
   display: flex;
   justify-content: center;
@@ -49,5 +48,5 @@ body {
 =======
 .glyphicon-remove {
   color: red;
->>>>>>> 1a87e4f30b4ff48e7a33a426c74c2e5b33850099
+
 }

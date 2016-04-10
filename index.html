@@ -4,292 +4,233 @@
 		<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/ >
 		<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
 		<title>Skills Tracker</title>
+
+		<!-- Our stylesheet -->
 		<link rel="stylesheet" type="text/css" href="main.css">
 
 		<!-- Google fonts -->
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
 		<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
 
-		<!-- D3.js -->
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js" charset="utf-8"></script>
+		<!-- Google icons -->
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-		<!-- jQuery -->
-	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-
-		<!-- Bootstrap -->
-		<!-- Latest compiled and minified CSS -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-
-		<!-- Optional theme -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
-
-		<!-- Latest compiled and minified JavaScript -->
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 		<!-- Login -->
 		<script src="app/authorize/auth.js"></script>
+
 	</head>
 	<body>
-		<nav class="navbar navbar-default">
-		  <div class="container-fluid">
-		    <!-- Brand and toggle get grouped for better mobile display -->
-		    <div class="navbar-header">
-		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-		        <span class="sr-only">Toggle navigation</span>
-		        <span class="icon-bar"></span>
-		        <span class="icon-bar"></span>
-		        <span class="icon-bar"></span>
-		      </button>
-		      <a class="navbar-brand" href="#">Brand</a>
-		    </div>
+		<nav>
+	    <div class="nav-wrapper">
+	      <a href="#" class="brand-logo">Logo</a>
+	      <ul id="nav-mobile" class="right hide-on-med-and-down">
+	        <li><a href="#">About</a></li>
+	        <li><a href="#">Profile</a></li>
+	        <li><a href="app/authorize/auth.html?login=1" id="link_login">Log in with GitHub!</a></li>
+	      </ul>
+	    </div>
+	  </nav>
 
-		    <!-- Collect the nav links, forms, and other content for toggling -->
-		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-		      <ul class="nav navbar-nav">
-		        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-		        <li><a href="#">Link</a></li>
-		        <li class="dropdown">
-		          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-		          <ul class="dropdown-menu">
-		            <li><a href="#">Action</a></li>
-		            <li><a href="#">Another action</a></li>
-		            <li><a href="#">Something else here</a></li>
-		            <li role="separator" class="divider"></li>
-		            <li><a href="#">Separated link</a></li>
-		            <li role="separator" class="divider"></li>
-		            <li><a href="#">One more separated link</a></li>
-		          </ul>
-		        </li>
-		      </ul>
-		      <form class="navbar-form navbar-left" role="search">
-		        <div class="form-group">
-		          <input type="text" class="form-control" placeholder="Search">
-		        </div>
-		        <button type="submit" class="btn btn-default">Submit</button>
-		      </form>
-		      <ul class="nav navbar-nav navbar-right">
-		        <li><a href="#">Link</a></li>
-		        <li class="dropdown">
-		          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-		          <ul class="dropdown-menu">
-		            <li><a href="#">Action</a></li>
-		            <li><a href="#">Another action</a></li>
-		            <li><a href="#">Something else here</a></li>
-		            <li role="separator" class="divider"></li>
-		            <li><a href="#">Separated link</a></li>
-		          </ul>
-		        </li>
-		      </ul>
-		    </div><!-- /.navbar-collapse -->
-		  </div><!-- /.container-fluid -->
-		</nav>
-
-				<div class="row">
-				<div class="col-md-6">
-						<div class="radarChart"></div>
-				</div>
-				<div class="col-md-6">
-					<div class="skills">
-						<div class="panel-group" id="accordion">
-						  <div class="panel panel-default">
-						    <div class="panel-heading">
-						      <h4 class="panel-title">
-						        <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
-						        Basic data types</a>
-						      </h4>
-						    </div>
-							    <div id="collapse1" class="panel-collapse collapse in">
-							      <div class="panel-body">
-											<a href="#" onclick="toggler('content1');">Numbers</a>
-											<p>summary of content1</p>
-											<ul id="content1" class="hidden">
-											</ul>
-											<a href="#" class="btn btn-info btn-lg pull-right" id="button1one">
-												<span class="glyphicon glyphicon-remove"></span> Complete
-											</a>
-										</div>
-										<div class="panel-body">
-											<a href="#" onclick="toggler('content2');">Strings</a>
-											<p>summary of content2</p>
-											<ul id="content2" class="hidden">
-											</ul>
-											<a href="#" class="btn btn-info btn-lg pull-right" id="button1two">
-												<span class="glyphicon glyphicon-remove"></span> Complete
-											</a>
-										</div>
-										<div class="panel-body">
-											<a href="#" onclick="toggler('content3');">Booleans</a>
-											<p>summary of content3</p>
-											<ul id="content3" class="hidden">
-											</ul>
-											<a href="#" class="btn btn-info btn-lg pull-right" id="button1three">
-												<span class="glyphicon glyphicon-remove"></span> Complete
-											</a>
-										</div>
-									</div>
-						  </div>
-						  <div class="panel panel-default">
-						    <div class="panel-heading">
-						      <h4 class="panel-title">
-						        <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
-						        Advanced data types</a>
-						      </h4>
-						    </div>
-						    <div id="collapse2" class="panel-collapse collapse">
-									<div class="panel-body">
-										<a href="#" onclick="toggler('content4');">Arrays</a>
-										<p>summary of content4</p>
-										<ul id="content4" class="hidden">
-										</ul>
-										<a href="#" class="btn btn-info btn-lg pull-right" id="button2one">
-											<span class="glyphicon glyphicon-remove"></span> Complete
-										</a>
-									</div>
-									<div class="panel-body">
-										<a href="#" onclick="toggler('content5');">Objects</a>
-										<p>summary of content5</p>
-										<ul id="content5" class="hidden">
-										</ul>
-										<a href="#" class="btn btn-info btn-lg pull-right" id="button2two">
-											<span class="glyphicon glyphicon-remove"></span> Complete
-										</a>
-									</div>
-									<div class="panel-body">
-										<a href="#" onclick="toggler('content6');">Undefined and null</a>
-										<p>summary of content6</p>
-										<ul id="content6" class="hidden">
-										</ul>
-										<a href="#" class="btn btn-info btn-lg pull-right" id="button2three">
-											<span class="glyphicon glyphicon-remove"></span> Complete
-										</a>
-									</div>
-						    </div>
-						  </div>
-						  <div class="panel panel-default">
-						    <div class="panel-heading">
-						      <h4 class="panel-title">
-						        <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
-						        Operators</a>
-						      </h4>
-						    </div>
-						    <div id="collapse3" class="panel-collapse collapse">
-									<div class="panel-body">
-										<a href="#" onclick="toggler('content7');">Arithmetic operators</a>
-										<p>summary of content7</p>
-										<ul id="content7" class="hidden">
-										</ul>
-										<a href="#" class="btn btn-info btn-lg pull-right" id="button3one">
-											<span class="glyphicon glyphicon-remove"></span> Complete
-										</a>
-									</div>
-									<div class="panel-body">
-										<a href="#" onclick="toggler('content8');">Logical operators</a>
-										<p>summary of content8</p>
-										<ul id="content8" class="hidden">
-										</ul>
-										<a href="#" class="btn btn-info btn-lg pull-right" id="button3two">
-											<span class="glyphicon glyphicon-remove"></span> Complete
-										</a>
-									</div>
-									<div class="panel-body">
-										<a href="#" onclick="toggler('content9');">Other operators</a>
-										<p>summary of content9</p>
-										<ul id="content9" class="hidden">
-										</ul>
-										<a href="#" class="btn btn-info btn-lg pull-right" id="button3three">
-											<span class="glyphicon glyphicon-remove"></span> Complete
-										</a>
-									</div>
-						    </div>
-						  </div>
-						</div>
-					</div>
-
-			<div class="holder">
-				<div class="col-md-8" id="login">
-					<a href="app/authorize/auth.html?login=1" id="link_login">
-						<h1 style="font-size:4em;">Log in with GitHub!</h1>
-					</a>
-				</div>
+		<div class="row">
+			<div class="col s12 m9 l8">
+				<div class="radarChart"></div>
 			</div>
+			<div class="col s12 m3 l4">
+				<ul class="collapsible" data-collapsible="accordion">
+				  <li>
+				  	<div class="collapsible-header">Basic Data Types</div>
+				    <div class="collapsible-body">
+							<p>Numbers</p>
+							<a class="modal-trigger waves-effect waves-light btn" href="#modal1">more info</a>
+							<a href="#" class="waves-effect waves-light btn" id="button1one">
+								<i class="material-icons left">done</i>
+								Complete</a>
+						</div>
+				    <div class="collapsible-body">
+							<p>Strings</p>
+							<a class="modal-trigger waves-effect waves-light btn" href="#modal2">more info</a>
+							<a href="#" class="waves-effect waves-light btn" id="button1two">
+								<i class="material-icons left">done</i>
+								Complete</a>
+						</div>
+				    <div class="collapsible-body">
+							<p>Booleans</p>
+							<a class="modal-trigger waves-effect waves-light btn" href="#modal3">more info</a>
+							<a href="#" class="waves-effect waves-light btn" id="button1three">
+								<i class="material-icons left">done</i>
+								Complete</a>
+						</div>
+				  </li>
+				  <li>
+				    <div class="collapsible-header">Advanced Data Types</div>
+						<div class="collapsible-body">
+							<p>Arrays</p>
+							<a class="modal-trigger waves-effect waves-light btn" href="#modal4">more info</a>
+							<a href="#" class="waves-effect waves-light btn" id="button2one">
+								<i class="material-icons left">done</i>
+								Complete</a>
+						</div>
+				    <div class="collapsible-body">
+							<p>Undefined and null</p>
+							<a class="modal-trigger waves-effect waves-light btn" href="#modal5">more info</a>
+							<a href="#" class="waves-effect waves-light btn" id="button2two">
+								<i class="material-icons left">done</i>
+								Complete</a>
+						</div>
+				    <div class="collapsible-body">
+							<p>Objects</p>
+							<a class="modal-trigger waves-effect waves-light btn" href="#modal6">more info</a>
+							<a href="#" class="waves-effect waves-light btn" id="button2three">
+								<i class="material-icons left">done</i>
+								Complete</a>
+						</div>
+				  </li>
+				  <li>
+				    <div class="collapsible-header">Operators</div>
+						<div class="collapsible-body">
+							<p>Arithmetic operators</p>
+							<a class="modal-trigger waves-effect waves-light btn" href="#modal7">more info</a>
+							<a href="#" class="waves-effect waves-light btn" id="button3one">
+								<i class="material-icons left">done</i>
+								Complete</a>
+						</div>
+				    <div class="collapsible-body">
+							<p>Logical operators</p>
+							<a class="modal-trigger waves-effect waves-light btn" href="#modal8">more info</a>
+							<a href="#" class="waves-effect waves-light btn" id="button3two">
+								<i class="material-icons left">done</i>
+								Complete</a>
+						</div>
+				    <div class="collapsible-body">
+							<p>Other operators</p>
+							<a class="modal-trigger waves-effect waves-light btn" href="#modal9">more info</a>
+							<a href="#" class="waves-effect waves-light btn" id="button3three">
+								<i class="material-icons left">done</i>
+								Complete</a>
+						</div>
+				  </li>
+				</ul>
 
-		<script src="radarChart.js"></script>
-		<script>
-			//////////////////////////////////////////////////////////////
-			//////////////////////// Set-Up //////////////////////////////
-			//////////////////////////////////////////////////////////////
+				<!-- Modal Structures -->
+			  <div id="modal1" class="modal modal-fixed-footer">
+			    <div class="modal-content">
+			      <h4>Numbers</h4>
+						<ul id="content1">
+						</ul>
+			    </div>
+			    <div class="modal-footer">
+			      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Back</a>
+			    </div>
+			  </div>
 
-			var margin = {top: 100, right: 100, bottom: 100, left: 100},
-				width = Math.min(700, window.innerWidth - 10) - margin.left - margin.right,
-				height = Math.min(width, window.innerHeight - margin.top - margin.bottom - 20);
+				<div id="modal2" class="modal modal-fixed-footer">
+			    <div class="modal-content">
+			      <h4>Strings</h4>
+						<ul id="content2">
+						</ul>
+			    </div>
+			    <div class="modal-footer">
+			      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Back</a>
+			    </div>
+			  </div>
 
-			//////////////////////////////////////////////////////////////
-			////////////////////////// Data //////////////////////////////
-			//////////////////////////////////////////////////////////////
+				<div id="modal3" class="modal modal-fixed-footer">
+			    <div class="modal-content">
+			      <h4>Booleans</h4>
+						<ul id="content3">
+						</ul>
+			    </div>
+			    <div class="modal-footer">
+			      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Back</a>
+			    </div>
+			  </div>
 
-			var skills = ["Basic data types","Advanced data types","Operators"]
+				<div id="modal4" class="modal modal-fixed-footer">
+			    <div class="modal-content">
+			      <h4>Arrays</h4>
+						<ul id="content4">
+						</ul>
+			    </div>
+			    <div class="modal-footer">
+			      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Back</a>
+			    </div>
+			  </div>
 
-			var subskills = [
-				{skill:skills[0],subskill:"Numbers",button:"button1one",status:1},
-				{skill:skills[0],subskill:"Strings",button:"button1two",status:1},
-				{skill:skills[0],subskill:"Booleans",button:"button1three",status:1},
-				{skill:skills[1],subskill:"Arrays",button:"button2one",status:1},
-				{skill:skills[1],subskill:"Objects",button:"button2two",status:1},
-				{skill:skills[1],subskill:"Undefined and null",button:"button2three",status:1},
-				{skill:skills[2],subskill:"Arithmetic operators",button:"button3one",status:1},
-				{skill:skills[2],subskill:"Logical operators",button:"button3two",status:1},
-				{skill:skills[2],subskill:"Other operators",button:"button3three",status:1},
-			]
+				<div id="modal5" class="modal modal-fixed-footer">
+			    <div class="modal-content">
+			      <h4>Undefined and null</h4>
+						<ul id="content5">
+						</ul>
+			    </div>
+			    <div class="modal-footer">
+			      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Back</a>
+			    </div>
+			  </div>
 
-			var data = [
-			      [
-			      {axis:skills[0],value:getAverage(skills[0])},
-			      {axis:skills[1],value:getAverage(skills[1])},
-			      {axis:skills[2],value:getAverage(skills[2])}
-					]
-			    ];
+				<div id="modal6" class="modal modal-fixed-footer">
+			    <div class="modal-content">
+			      <h4>Objects</h4>
+						<ul id="content6">
+						</ul>
+			    </div>
+			    <div class="modal-footer">
+			      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Back</a>
+			    </div>
+			  </div>
 
-			function getAverage(skill){
+				<div id="modal7" class="modal modal-fixed-footer">
+			    <div class="modal-content">
+			      <h4>Arithmetic operators</h4>
+						<ul id="content7">
+						</ul>
+			    </div>
+			    <div class="modal-footer">
+			      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Back</a>
+			    </div>
+			  </div>
 
-			var filteredSkills = [];
+				<div id="modal8" class="modal modal-fixed-footer">
+			    <div class="modal-content">
+			      <h4>Logical operators</h4>
+						<ul id="content8">
+						</ul>
+			    </div>
+			    <div class="modal-footer">
+			      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Back</a>
+			    </div>
+			  </div>
 
-			  for (var i = 0; i < subskills.length; i++){
-			    if (subskills[i].skill == skill){
-			      filteredSkills.push(subskills[i]);
-			    }
-			  }
+				<div id="modal9" class="modal modal-fixed-footer">
+			    <div class="modal-content">
+			      <h4>Other operators</h4>
+						<ul id="content9">
+						</ul>
+			    </div>
+			    <div class="modal-footer">
+			      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Back</a>
+			    </div>
+			  </div>
 
-			var total = 0;
-			var average = 0;
+			<!-- D3.js -->
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js" charset="utf-8"></script>
 
-			  for (var j = 0; j < filteredSkills.length; j++){
-			    total += filteredSkills[j].status;
-			    average = total/filteredSkills.length;
-			  }
+			<!-- jQuery -->
+		  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 
-			return average;
-			}
+			<!-- Compiled and minified CSS -->
+			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
 
-			//////////////////////////////////////////////////////////////
-			//////////////////// Draw the Chart //////////////////////////
-			//////////////////////////////////////////////////////////////
+			<!-- Compiled and minified JavaScript -->
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
 
-			var color = d3.scale.ordinal()
-				.range(["#EDC951","#CC333F","#00A0B0"]);
+			<!-- Draws the radar -->
+			<script src="radarChart.js"></script>
 
-			var radarChartOptions = {
-			  w: width,
-			  h: height,
-			  margin: margin,
-			  maxValue: 1,
-			  levels: 5,
-			  roundStrokes: true,
-			  color: color
-			};
-			//Call function to draw the Radar chart
-			RadarChart(".radarChart", data, radarChartOptions);
-		</script>
-		<script src="populateList.js"></script>
-		<script src="skillsTracker.js"></script>
+			<!-- Inserts content -->
+			<script src="populateList.js"></script>
+
+			<!-- Chart set-up and JQuery plugins -->
+			<script src="skillsTracker.js"></script>
 
 	</body>
 </html>
