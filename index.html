@@ -34,6 +34,20 @@
 			</div>
 			<div class="col s12 m3 l4">
 
+				<!-- Modal Trigger -->
+			  <a class="modal-trigger waves-effect waves-light btn" href="#modal1">Modal</a>
+
+			  <!-- Modal Structure -->
+			  <div id="modal1" class="modal modal-fixed-footer">
+			    <div class="modal-content">
+			      <h4>Modal Header</h4>
+			      <p>A bunch of text</p>
+			    </div>
+			    <div class="modal-footer">
+			      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Agree</a>
+			    </div>
+			  </div>
+
 				<ul id="content1">
 				</ul>
 					<a href="#" class="btn btn-info btn-lg pull-right" id="button1one">Complete</a>
@@ -84,6 +98,13 @@
 
 			<!-- Radarchart JS -->
 			<script src="radarChart.js"></script>
+
+			<script>
+			$(document).ready(function(){
+				// the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+				$('.modal-trigger').leanModal();
+			});
+			</script>
 
 		<script>
 			//////////////////////////////////////////////////////////////
