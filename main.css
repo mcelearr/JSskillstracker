@@ -1,0 +1,44 @@
+body {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  fill: #242424;
+  text-align: left;
+  cursor: default;
+}
+
+.legend {
+  font-family: 'Raleway', sans-serif;
+  fill: #333333;
+}
+
+.tooltip {
+  fill: #333333;
+}
+
+.collapsible-header {
+
+}
+
+.holder{
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: #ffffff;
+}
+#login{
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  background-color: #dee1ff;
+  top: 20vh;
+  height: 40vh;
+  border-radius: 2vw;
+}
+#link_login{
+  display: flex;
+  justify-content: center;
+.glyphicon-remove {
+  color: red;
+
+}
