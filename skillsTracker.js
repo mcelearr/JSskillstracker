@@ -1,9 +1,14 @@
-function toggler(divId) {
-    $("#" + divId).toggleClass("hidden");
-}
+//JQuery plugins
+
+$(document).ready(function(){
+  // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+  $('.modal-trigger').leanModal();
+});
+
+
+//Update graph when button is pressed
 
 $('.btn').click(function(){
-  $(this).find('span').toggleClass('glyphicon-ok').toggleClass('glyphicon-remove');
   var id = $(this).attr('id');
   toggleSubskill(id)
 
