@@ -1,25 +1,10 @@
-var li1 = document.createElement('li')
-var li2 = document.createElement('li')
-var li3 = document.createElement('li')
-var li4 = document.createElement('li')
-var li5 = document.createElement('li')
-var li6 = document.createElement('li')
-var node1 = document.createTextNode('Lorem ipsum dolor sit amet')
-var node2 = document.createTextNode('consectetur adipisicing elit')
-var node3 = document.createTextNode('ut labore et dolore magna aliqua')
-var node4 = document.createTextNode('Lorem ipsum dolor sit amet, consectetur adipisicing elit')
-var node5 = document.createTextNode('sed do eiusmod tempor incididunt ut labore')
-var node6 = document.createTextNode('consectetur adipisicing elit')
-li1.appendChild(node1)
-li2.appendChild(node2)
-li3.appendChild(node3)
-li4.appendChild(node4)
-li5.appendChild(node5)
-li6.appendChild(node6)
-var ul = document.getElementById('content1one')
-ul.appendChild(li1)
-ul.appendChild(li2)
-ul.appendChild(li3)
-ul.appendChild(li4)
-ul.appendChild(li5)
-ul.appendChild(li6)
+ var ul = document.getElementById('content1one')
+
+var text = ['Lorem ipsum dolor sit amet','consectetur adipisicing elit','ut labore et dolore magna aliqua','Lorem ipsum dolor sit amet, consectetur adipisicing elit','sed do eiusmod tempor incididunt ut labore','consectetur adipisicing elit']
+
+for (var i = 0; i < 6; i++){
+  var li = document.createElement('li');
+  var node = document.createTextNode(text[i]);
+  li.appendChild(node);
+  ul.appendChild(li);
+}
