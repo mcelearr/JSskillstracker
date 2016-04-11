@@ -17,15 +17,13 @@
 
 	</head>
 	<body>
-		<nav>
-	    <div class="nav-wrapper">
-	      <a href="#" class="brand-logo">Logo</a>
-	      <ul id="nav-mobile" class="right hide-on-med-and-down">
-	        <li><a href="#">About</a></li>
-	        <li><a href="#">Profile</a></li>
-	        <li><a href="app/authorize/auth.html?login=1" id="link_login">Log in with GitHub!</a></li>
-	      </ul>
-	    </div>
+		<nav class="nav-wrapper">
+      <a href="#" class="brand-logo">Logo</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="#">About</a></li>
+        <li><a href="#">Profile</a></li>
+        <li><a href="app/authorize/auth.html?login=1" id="link_login">Log in with GitHub!</a></li>
+      </ul>
 	  </nav>
 
 		<div class="row">
@@ -107,127 +105,28 @@
 						</div>
 				  </li>
 				</ul>
+			</div>
+		</div>
 
-				<!-- Modal Structures -->
-			  <div id="modal1" class="modal modal-fixed-footer">
-			    <div class="modal-content">
-			      <h4>Numbers</h4>
-						<ul id="content1">
-						</ul>
-			    </div>
-			    <div class="modal-footer">
-			      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Back</a>
-			    </div>
-			  </div>
+		<!-- Modal Structures -->
+		<div id="modals"></div>
 
-				<div id="modal2" class="modal modal-fixed-footer">
-			    <div class="modal-content">
-			      <h4>Strings</h4>
-						<ul id="content2">
-						</ul>
-			    </div>
-			    <div class="modal-footer">
-			      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Back</a>
-			    </div>
-			  </div>
+		<!-- D3.js -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js" charset="utf-8"></script>
 
-				<div id="modal3" class="modal modal-fixed-footer">
-			    <div class="modal-content">
-			      <h4>Booleans</h4>
-						<ul id="content3">
-						</ul>
-			    </div>
-			    <div class="modal-footer">
-			      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Back</a>
-			    </div>
-			  </div>
+		<!-- jQuery -->
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 
-				<div id="modal4" class="modal modal-fixed-footer">
-			    <div class="modal-content">
-			      <h4>Arrays</h4>
-						<ul id="content4">
-						</ul>
-			    </div>
-			    <div class="modal-footer">
-			      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Back</a>
-			    </div>
-			  </div>
+		<!-- Compiled and minified CSS -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
 
-				<div id="modal5" class="modal modal-fixed-footer">
-			    <div class="modal-content">
-			      <h4>Undefined and null</h4>
-						<ul id="content5">
-						</ul>
-			    </div>
-			    <div class="modal-footer">
-			      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Back</a>
-			    </div>
-			  </div>
+		<!-- Compiled and minified JavaScript -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
 
-				<div id="modal6" class="modal modal-fixed-footer">
-			    <div class="modal-content">
-			      <h4>Objects</h4>
-						<ul id="content6">
-						</ul>
-			    </div>
-			    <div class="modal-footer">
-			      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Back</a>
-			    </div>
-			  </div>
-
-				<div id="modal7" class="modal modal-fixed-footer">
-			    <div class="modal-content">
-			      <h4>Arithmetic operators</h4>
-						<ul id="content7">
-						</ul>
-			    </div>
-			    <div class="modal-footer">
-			      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Back</a>
-			    </div>
-			  </div>
-
-				<div id="modal8" class="modal modal-fixed-footer">
-			    <div class="modal-content">
-			      <h4>Logical operators</h4>
-						<ul id="content8">
-						</ul>
-			    </div>
-			    <div class="modal-footer">
-			      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Back</a>
-			    </div>
-			  </div>
-
-				<div id="modal9" class="modal modal-fixed-footer">
-			    <div class="modal-content">
-			      <h4>Other operators</h4>
-						<ul id="content9">
-						</ul>
-			    </div>
-			    <div class="modal-footer">
-			      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Back</a>
-			    </div>
-			  </div>
-
-			<!-- D3.js -->
-			<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js" charset="utf-8"></script>
-
-			<!-- jQuery -->
-		  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-
-			<!-- Compiled and minified CSS -->
-			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
-
-			<!-- Compiled and minified JavaScript -->
-			<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
-
-			<!-- Draws the radar -->
-			<script src="radarChart.js"></script>
-
-			<!-- Inserts content -->
-			<script src="populateList.js"></script>
-
-			<!-- Chart set-up and JQuery plugins -->
-			<script src="skillsTracker.js"></script>
+		<script src="radarChart.js"></script>
+		<script src="setUpModals.js"></script>
+		<script src="populateLists.js"></script>
+		<script src="skillsTracker.js"></script>
 
 	</body>
 </html>
