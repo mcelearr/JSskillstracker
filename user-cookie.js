@@ -1,9 +1,16 @@
-Array.prototype.arrObj = function(){
-  var o = {};
-  this.forEach(function(el) {o[el.split('=')[0]] = /\d+/.test(el.split('=')[1]) ? +(el.split('=')[1]) : el.split('=')[1]});
-  return o;
+function User(){
+  var obj = JSON.parse(document.cookie.split('=')[1]);
+  for (prop in obj){
+    this[prop] = obj[prop];
+  }
+  User.prototype.setValue = function(property, value){
+    this[property] = value;
+    document.cookie = '';
+    document.cookie = 'user='+JSON.stringify(this);
+  }
 }
-function getUser(){
+
+function setCookie(){
   if (!document.cookie) {
   let user = {
     numbers: 0,
@@ -14,10 +21,9 @@ function getUser(){
     undefinedAndNull: 0,
     arithmeticOperators: 0,
     logicalOperators: 0,
-    otherOperators: 0
-  }
-  var cookieStr = JSON.stringify(user).replace(/[{}"]/g,'').replace(/:/g,'=');
-  cookieStr.split(',').forEach((el)=> document.cookie = el);
-  }
-  return document.cookie.replace(/\s/g, '').split(';').arrObj();
-}
+    otherOperators: 0,
+  };
+  var cookieStr = JSON.stringify(user);
+  document.cookie = 'user='+cookieStr;
+  };
+};
