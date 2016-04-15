@@ -4,11 +4,9 @@ function User(){
   for (prop in obj){
     this[prop] = obj[prop];
   };
-  User.prototype.incValue = function(skill, subSkill){
+  User.prototype.toggleValue = function(skill, subSkill){
     let curSkill = this[skill];
-    if (curSkill[subSkill] < 1){
-      curSkill[subSkill] = 1;
-    }
+    curSkill[subSkill] = curSkill[subSkill] == 0 ? 1 : 0;
     document.cookie = 'user='+JSON.stringify(this);
   };
   User.prototype.getAverage = function(skill){
