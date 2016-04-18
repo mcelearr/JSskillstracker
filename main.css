@@ -15,10 +15,6 @@ body {
   fill: #333333;
 }
 
-.collapsible-header {
-
-}
-
 .holder{
   display: flex;
   justify-content: center;
