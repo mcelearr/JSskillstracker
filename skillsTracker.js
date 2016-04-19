@@ -56,5 +56,6 @@ $('.sbtn').click(function(){
   var id = $(this).attr('id').split('=');
   user.toggleValue(id[0], id[1]);
   $(this).toggleClass("red");
+  
   RadarChart(".radarChart", data(), radarChartOptions);
 });
