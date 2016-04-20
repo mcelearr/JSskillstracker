@@ -1,6 +1,5 @@
 //Initialization
-setCookie();
-var user = new User();
+
 //JQuery plugins
 $(document).ready(function(){
   // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
@@ -56,6 +55,13 @@ $('.sbtn').click(function(){
   var id = $(this).attr('id').split('=');
   user.toggleValue(id[0], id[1]);
   $(this).toggleClass("red");
-  
+  var done = document.getElementById(this.id+'check');
+  this.childNodes[0].textContent = this.childNodes[0].textContent == 'Incomplete' ? 'Complete' : 'Incomplete';
+  done.innerHTML = done.innerHTML == '' ? 'done' : '';
   RadarChart(".radarChart", data(), radarChartOptions);
 });
+
+//Toggle state of 'Complete' button
+function toggleButton(button){
+  console.log(button.childNodes[1]);
+}
