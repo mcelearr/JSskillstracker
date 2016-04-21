@@ -47,3 +47,5 @@ function setCookie(){
   document.cookie = 'user='+cookieStr;
   };
 };
+setCookie();
+var user = new User();
