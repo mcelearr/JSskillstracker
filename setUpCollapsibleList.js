@@ -7,14 +7,14 @@ function createDefinedElement(type, classname, href, inner, id){
   if (id && id.length > 0) definedEl.id = id;
   return definedEl;
 }
-(()=> {
+(function() {
       var listItems = {
       basicDataTypes: ['Basic Data Types', 'Numbers', 'Strings', 'Booleans'],
       advancedDataTypes: ['Advanced Data Types', 'Arrays', 'Undefined and Null', 'Objects'],
       operators: ['Operators', 'Arithmetic Operators', 'Logical Operators', 'Other Operators']
   };
   function camelCase(str){
-    return str.split(' ').map((el, j)=> j == 0 ? el.toLowerCase() : el.slice(0,1).toUpperCase()+el.slice(1)).join('').trim();
+    return str.split(' ').map(function(el, j){ return j == 0 ? el.toLowerCase() : el.slice(0,1).toUpperCase()+el.slice(1)}).join('').trim();
   }
   var modalCount = 0;
   for (item in listItems){
