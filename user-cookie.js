@@ -5,12 +5,12 @@ function User(){
     this[prop] = obj[prop];
   };
   User.prototype.toggleValue = function(skill, subSkill){
-    let curSkill = this[skill];
+    var curSkill = this[skill];
     curSkill[subSkill] = curSkill[subSkill] == 0 ? 1 : 0;
     document.cookie = 'user='+JSON.stringify(this);
   };
   User.prototype.getAverage = function(skill){
-    let sum = 0, count = 0;
+    var sum = 0, count = 0;
     for (prop in skill){
       if (prop != 'title'){
         sum += skill[prop];
@@ -23,7 +23,7 @@ function User(){
 
 function setCookie(){
   if (!document.cookie) {
-  let user = {
+  var user = {
     basicDataTypes: {
       title: "Basic Data Types",
       numbers: 0,

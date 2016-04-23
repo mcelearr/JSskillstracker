@@ -52,7 +52,7 @@ RadarChart(".radarChart", data(), radarChartOptions);
 //Update graph when button is pressed
 
 $('.sbtn').click(function(){
-  var id = $(this).attr('id').split('=');
+  var id = $(this).attr('id').equalSplit();
   user.toggleValue(id[0], id[1]);
   $(this).toggleClass("red");
   var done = document.getElementById(this.id+'check');

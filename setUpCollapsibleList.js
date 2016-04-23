@@ -1,20 +1,21 @@
-
-function createDefinedElement(type, classname, href, inner, id){
+String.prototype.equalSplit = function(){
+  var dataArr = this.split('=');
+  return dataArr.length > 2 ? [dataArr[0]].concat(dataArr.slice(1).join('=')) : dataArr;
+}
+function createDefinedElement(type){
+  var args = Array.from(arguments).slice(1);
   var definedEl = document.createElement(type);
-  if (classname && classname.length > 0) definedEl.className = classname;
-  if (href && href.length > 0) definedEl.href = href;
-  if (inner && inner.length > 0) definedEl.innerHTML = inner;
-  if (id && id.length > 0) definedEl.id = id;
+  args.forEach(function(el){definedEl[el.equalSplit()[0]] = el.equalSplit()[1]});
   return definedEl;
 }
-(()=> {
+(function() {
       var listItems = {
       basicDataTypes: ['Basic Data Types', 'Numbers', 'Strings', 'Booleans'],
       advancedDataTypes: ['Advanced Data Types', 'Arrays', 'Undefined and Null', 'Objects'],
       operators: ['Operators', 'Arithmetic Operators', 'Logical Operators', 'Other Operators']
   };
   function camelCase(str){
-    return str.split(' ').map((el, j)=> j == 0 ? el.toLowerCase() : el.slice(0,1).toUpperCase()+el.slice(1)).join('').trim();
+    return str.split(' ').map(function(el, j){ return j == 0 ? el.toLowerCase() : el.slice(0,1).toUpperCase()+el.slice(1)}).join('').trim();
   }
   var modalCount = 0;
   for (item in listItems){
@@ -27,11 +28,11 @@ function createDefinedElement(type, classname, href, inner, id){
       var currID = `${camelCase(listItems[item][0])}=${camelCase(listItems[item][i])}`;
       var currSkill = user[currID.split('=')[0]];
       var skillState = currSkill[currID.split('=')[1]];
-      var cb = createDefinedElement('div', 'collapsible-body');
-      var subTitle = createDefinedElement('p', '', '', listItems[item][i]);
-      var moreInfo = createDefinedElement('a', 'modal-trigger waves-effect waves-light btn', `#modal${modalCount}`, 'more info');
-      var complete = createDefinedElement('a', `waves-effect waves-light btn sbtn ${skillState==0 ? 'red' : ''}`, '#', `${skillState==0 ? 'Incomplete' : 'complete'}`, currID);
-      var done = createDefinedElement('i', 'material-icons left', '', `${skillState==0 ? '' : 'done'}`, `${currID}check`);
+      var cb = createDefinedElement('div', 'className=collapsible-body');
+      var subTitle = createDefinedElement('p', `innerHTML=${listItems[item][i]}`);
+      var moreInfo = createDefinedElement('a', 'className=modal-trigger waves-effect waves-light btn', `href=#modal${modalCount}`, 'innerHTML=more info');
+      var complete = createDefinedElement('a', `className=waves-effect waves-light btn sbtn${skillState==0 ? ' red' : ''}`, 'href=#', `innerHTML=${skillState==0 ? 'Incomplete' : 'Complete'}`, `id=${currID}`);
+      var done = createDefinedElement('i', 'className=material-icons left', `innerHTML=${skillState==0 ? '' : 'done'}`, `id=${currID}check`);
       complete.appendChild(done);
       cb.appendChild(subTitle);
       cb.appendChild(moreInfo);

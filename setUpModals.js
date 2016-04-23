@@ -1,7 +1,7 @@
-(() => {
+(function() {
   var types = ['Numbers', 'Strings', 'Booleans', 'Arrays', 'Undefined and null', 'Objects', 'Arithmetic operators', 'Logical operators', 'Other operators']
 
-  types.map(t => {
+  types.map(function(t) {
     var h4 = document.createElement('h4')
         h4.innerHTML = t
     var ul = document.createElement('ul')
