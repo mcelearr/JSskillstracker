@@ -23,7 +23,18 @@ function User(){
 
 function setCookie(){
   if (!document.cookie) {
-  var user = {
+  var user = {};
+  for (i=0; i<skills.length; i++){
+    var skill = `skill${i}`;
+    user[skill] = {};
+    user[skill].title = skills[i][0];
+    for (j=1; j<skills[i].length; j++){
+      var subskill = `subskill${j}`;
+      user[skill][subskill] = 0;
+    }
+  }
+
+  /*{
     basicDataTypes: {
       title: "Basic Data Types",
       numbers: 0,
@@ -41,11 +52,12 @@ function setCookie(){
       arithmeticOperators: 0,
       logicalOperators: 0,
       otherOperators: 0
-    }
-  };
+    }*/
+  //};
   var cookieStr = JSON.stringify(user);
   document.cookie = 'user='+cookieStr;
   };
 };
 setCookie();
 var user = new User();
+console.log(user);

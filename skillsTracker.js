@@ -22,9 +22,9 @@ var margin = {top: 100, right: 100, bottom: 100, left: 100},
 function data(){
   return [
           [
-            {axis: user.basicDataTypes.title, value: user.getAverage(user.basicDataTypes)},
-            {axis: user.advancedDataTypes.title, value: user.getAverage(user.advancedDataTypes)},
-            {axis: user.operators.title, value: user.getAverage(user.operators)}
+            {axis: user.skill0.title, value: user.getAverage(user.skill0)},
+            {axis: user.skill1.title, value: user.getAverage(user.skill1)},
+            {axis: user.skill2.title, value: user.getAverage(user.skill2)}
           ]
         ];
   };
@@ -52,7 +52,7 @@ RadarChart(".radarChart", data(), radarChartOptions);
 //Update graph when button is pressed
 
 $('.sbtn').click(function(){
-  var id = $(this).attr('id').equalSplit();
+  var id = $(this).attr('id').firstEqualSplit();
   user.toggleValue(id[0], id[1]);
   $(this).toggleClass("red");
   var done = document.getElementById(this.id+'check');
