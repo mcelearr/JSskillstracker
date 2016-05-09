@@ -2,10 +2,22 @@ var skills = [
   ['Basic Data Types','Numbers','Strings','Booleans'],
   ['Advanced Data Types', 'Arrays', 'Undefined and Null', 'Objects'],
   ['Operators', 'Arithmetic Operators', 'Logical Operators', 'Other Operators']
+  ['Functions','Syntax','Return','Encapsulation'],
+  ['Looping', 'For Loop', 'While Loop', 'Break'],
+  ['Control Flow', 'If Statements', 'Switch Statements', 'Ternary Operator'],
+  ['Looping', 'For Loop', 'While Loop', 'Break'],
+  ['Basic Objects', 'Object Literal (JSON)', 'Object Constructors', 'Inheritance and Prototypes'],
+  ['Array Methods', 'sort()', 'indexOf()', 'concat()', 'splice()'],
+  ['String Methods', 'slice()', 'substring()', 'charAt()'],
+  ['Higher-order Functions', 'map()', 'filter()', 'reduce()'],
+  ['Object-oriented Programming', 'Classes and Instances', 'Getters and Setters', 'Polymorphism'],
+  ['In-built Objects', 'Document', 'Math', 'Date'],
+  ['Style', 'Naming Conventions', 'Indenting', 'Comments'],
+  ['ECMA 6', 'Fat Arrows', 'Template Strings', 'let', 'const', 'Symbols'],
+  ['JS Libraries', 'JQuery', 'Bootstrap', 'Materialize'],
+  ['JS Frameworks', 'Angular', 'React'],
+  ['Functional Programming', 'Closures', 'Promises']
 ];
-//TO Do
-
-
 
 var content = [
 {
