@@ -1,6 +1,6 @@
 var skills = [
   ['Basic Data Types','Numbers','Strings','Booleans'],
-  ['Advanced Data Types', 'Arrays', 'Undefined and Null', 'Objects'],
+  ['Advanced Data Types', 'Arrays', 'Objects', 'Undefined and Null'],
   ['Operators', 'Arithmetic Operators', 'Logical Operators', 'Other Operators']
   ['Functions','Syntax','Return','Encapsulation'],
   ['Looping', 'For Loop', 'While Loop', 'Break'],
@@ -115,5 +115,45 @@ var content = [
   description: "Write a function that takes one or more arrays and returns a new array of unique values in the order of the original provided arrays",
   skill: skills[1][0],
   subskill: skills[1][1]
+},
+{
+  title: "Codecademy objects tutorial",
+  contentType: "tutorial",
+  URL: "https://www.codecademy.com/en/courses/javascript-beginner-en-OcLlk/2/1",
+  description: "Codecademy tutorial covering object syntax and object creators",
+  skill: skills[1][0],
+  subskill: skills[1][2]
+},
+{
+  title: "Object docs",
+  contentType: "documentation",
+  URL: "http://www.w3schools.com/js/js_objects.asp",
+  description: "Documentation for objects on W3 Schools",
+  skill: skills[1][0],
+  subskill: skills[1][2]
+},
+{
+  title: "Count strings in objects",
+  contentType: "kata",
+  URL: "http://www.codewars.com/kata/count-strings-in-objects",
+  description: "Create a function strCount (takes an object as argument) that will count all string values inside an object",
+  skill: skills[1][0],
+  subskill: skills[1][2]
+},
+{
+  title: "Truth, Equality and JavaScript",
+  contentType: "tutorial",
+  URL: "https://javascriptweblog.wordpress.com/2011/02/07/truth-equality-and-javascript/",
+  description: "Blog which explores the different data types with worked examples",
+  skill: skills[1][0],
+  subskill: skills[1][2]
+},
+{
+  title: "Data types docs",
+  contentType: "documentation",
+  URL: "http://www.w3schools.com/js/js_datatypes.asp",
+  description: "Documentation for data types including null and undefined on W3 Schools",
+  skill: skills[1][0],
+  subskill: skills[1][2]
 }
 ]
