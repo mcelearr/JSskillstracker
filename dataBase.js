@@ -91,5 +91,29 @@ var content = [
   description: "Codewars kata to create an 'exclusive or' operator that evaluates two booleans and returns true if exactly one of the two expressions is true",
   skill: skills[0][0],
   subskill: skills[0][3]
+},
+{
+  title: "Codecademy array tutorial",
+  contentType: "tutorial",
+  URL: "https://www.codecademy.com/courses/javascript-beginner-en-OcLlk/0/1",
+  description: "Codecademy tutorial covering iterating over an array, heterogeneous arrays, 2-D arrays",
+  skill: skills[1][0],
+  subskill: skills[1][1]
+},
+{
+  title: "Array docs",
+  contentType: "documentation",
+  URL: "http://www.w3schools.com/js/js_arrays.asp",
+  description: "Documentation for arrays on W3 Schools",
+  skill: skills[1][0],
+  subskill: skills[1][1]
+},
+{
+  title: "Sorted Union",
+  contentType: "kata",
+  URL: "http://www.codewars.com/kata/sorted-union",
+  description: "Write a function that takes one or more arrays and returns a new array of unique values in the order of the original provided arrays",
+  skill: skills[1][0],
+  subskill: skills[1][1]
 }
 ]
