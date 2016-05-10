@@ -146,7 +146,7 @@ var content = [
   URL: "https://javascriptweblog.wordpress.com/2011/02/07/truth-equality-and-javascript/",
   description: "Blog which explores the different data types with worked examples",
   skill: skills[1][0],
-  subskill: skills[1][2]
+  subskill: skills[1][3]
 },
 {
   title: "Data types docs",
@@ -154,6 +154,22 @@ var content = [
   URL: "http://www.w3schools.com/js/js_datatypes.asp",
   description: "Documentation for data types including null and undefined on W3 Schools",
   skill: skills[1][0],
-  subskill: skills[1][2]
+  subskill: skills[1][3]
+},
+{
+  title: "Codermania arithmetic operators tutorial",
+  contentType: "tutorial",
+  URL: "http://www.codermania.com/javascript/lesson/1i/arithmetic-operators",
+  description: "Codermania tutorial covering arithmetic operators and including some exercises",
+  skill: skills[2][0],
+  subskill: skills[2][1]
+},
+{
+  title: "Operators docs (arithmetic section)",
+  contentType: "documentation",
+  URL: "http://www.w3schools.com/js/js_operators.asp",
+  description: "Documentation for operators on W3 Schools with section on arithmetic operators",
+  skill: skills[2][0],
+  subskill: skills[2][1]
 }
 ]
