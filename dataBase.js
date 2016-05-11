@@ -187,5 +187,37 @@ var content = [
   description: "Codermania tutorial covering logical operators and including some exercises",
   skill: skills[2][0],
   subskill: skills[2][2]
+},
+{
+  title: "Codermania arithmetic string operators tutorial",
+  contentType: "tutorial",
+  URL: "http://www.codermania.com/javascript/lesson/1k/string-operators",
+  description: "Codermania tutorial covering string operators and including some exercises",
+  skill: skills[2][0],
+  subskill: skills[2][3]
+},
+{
+  title: "Unary (incrementation) operator docs",
+  contentType: "documentation",
+  URL: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#Unary_operators",
+  description: "Documentation for unary operators on MDN",
+  skill: skills[2][0],
+  subskill: skills[2][3]
+},
+{
+  title: "Bitwise (binary) operator docs",
+  contentType: "documentation",
+  URL: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#Bitwise_operators",
+  description: "Documentation for bitwise operators on MDN",
+  skill: skills[2][0],
+  subskill: skills[2][3]
+},
+{
+  title: "Relation operator docs",
+  contentType: "documentation",
+  URL: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#Relational_operators",
+  description: "Documentation for relational operators on MDN",
+  skill: skills[2][0],
+  subskill: skills[2][3]
 }
 ]
