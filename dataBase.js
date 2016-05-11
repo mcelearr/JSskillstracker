@@ -157,7 +157,7 @@ var content = [
   subskill: skills[1][3]
 },
 {
-  title: "Codermania arithmetic operators tutorial",
+  title: "Codermania arithmetic arithmetic operators tutorial",
   contentType: "tutorial",
   URL: "http://www.codermania.com/javascript/lesson/1i/arithmetic-operators",
   description: "Codermania tutorial covering arithmetic operators and including some exercises",
@@ -171,5 +171,21 @@ var content = [
   description: "Documentation for operators on W3 Schools with section on arithmetic operators",
   skill: skills[2][0],
   subskill: skills[2][1]
+},
+{
+  title: "JavaScript Comparison and Logical Operators",
+  contentType: "documentation",
+  URL: "http://www.w3schools.com/js/js_comparisons.asp",
+  description: "Documentation for comparison and logical operators on W3 Schools",
+  skill: skills[2][0],
+  subskill: skills[2][2]
+},
+{
+  title: "Codermania arithmetic logical operators tutorial",
+  contentType: "tutorial",
+  URL: "http://www.codermania.com/javascript/lesson/1n/logical-operators",
+  description: "Codermania tutorial covering logical operators and including some exercises",
+  skill: skills[2][0],
+  subskill: skills[2][2]
 }
 ]
