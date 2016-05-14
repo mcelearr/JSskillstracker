@@ -2,7 +2,7 @@ var skills = [
   ['Basic Data Types','Numbers','Strings','Booleans'],
   ['Advanced Data Types', 'Arrays', 'Objects', 'Undefined and Null'],
   ['Operators', 'Arithmetic Operators', 'Logical Operators', 'Other Operators']
-  ['Functions','Syntax','Return','Encapsulation'],
+  ['Functions','Basic','Encapsulation','Return'],
   ['Looping', 'For Loop', 'While Loop', 'Break'],
   ['Control Flow', 'If Statements', 'Switch Statements', 'Ternary Operator'],
   ['Looping', 'For Loop', 'While Loop', 'Break'],
@@ -219,5 +219,53 @@ var content = [
   description: "Documentation for relational operators on MDN",
   skill: skills[2][0],
   subskill: skills[2][3]
+},
+{
+  title: "Codecademy functions tutorial",
+  contentType: "tutorial",
+  URL: "https://www.codecademy.com/courses/functions-in-javascript-2-0/0/1",
+  description: "Codecademy tutorial covering function syntax",
+  skill: skills[3][0],
+  subskill: skills[3][1]
+},
+{
+  title: "Function docs",
+  contentType: "documentation",
+  URL: "http://www.w3schools.com/js/js_functions.asp",
+  description: "Documentation for functions on W3 Schools",
+  skill: skills[3][0],
+  subskill: skills[3][1]
+},
+{
+  title: "Eloquent Javascript Chapter 3",
+  contentType: "book",
+  URL: "http://eloquentjavascript.net/03_functions.html",
+  description: "Chapter 3 of Marijn Haverbeke's legendary book on Javascript.",
+  skill: skills[3][0],
+  subskill: skills[3][1]
+},
+{
+  title: "Codecademy functions tutorial",
+  contentType: "tutorial",
+  URL: "https://www.codecademy.com/courses/functions-in-javascript-2-0/0/1",
+  description: "Codecademy tutorial covering function syntax",
+  skill: skills[3][0],
+  subskill: skills[3][2]
+},
+{
+  title: "Function scope docs",
+  contentType: "documentation",
+  URL: "http://www.w3schools.com/js/js_scope.asp",
+  description: "Documentation for function scope on W3 Schools",
+  skill: skills[3][0],
+  subskill: skills[3][2]
+},
+{
+  title: "Test Your Knowledge Of Function Scope",
+  contentType: "kata",
+  URL: "http://www.codewars.com/kata/test-your-knowledge-of-function-scope/javascript",
+  description: "Create a function that adds from two invocations. This requires an understanding of function scopes.",
+  skill: skills[3][0],
+  subskill: skills[3][2]
 }
 ]
