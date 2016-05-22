@@ -3,9 +3,8 @@ var skills = [
   ['Advanced Data Types', 'Arrays', 'Objects', 'Undefined and Null'],
   ['Operators', 'Arithmetic Operators', 'Logical Operators', 'Other Operators']
   ['Functions','Basic','Function scope'],
-  ['Looping', 'For Loop', 'While Loop', 'Break'],
+  ['Looping', 'For Loop', 'While Loop'],
   ['Control Flow', 'If Statements', 'Switch Statements', 'Ternary Operator'],
-  ['Looping', 'For Loop', 'While Loop', 'Break'],
   ['Basic Objects', 'Object Literal (JSON)', 'Object Constructors', 'Inheritance and Prototypes'],
   ['Array Methods', 'sort()', 'indexOf()', 'concat()', 'splice()'],
   ['String Methods', 'slice()', 'substring()', 'charAt()'],
@@ -291,5 +290,29 @@ var content = [
   description: "Your task is to write a function that takes two integers rows and columns and returns a chessboard pattern as a two dimensional array. Making a digital chessboard is an interesting way of visualising how loops can work together.",
   skill: skills[4][0],
   subskill: skills[4][1]
+},
+{
+  title: "Tutorials point while loops tutorial",
+  contentType: "tutorial",
+  URL: "http://www.tutorialspoint.com/javascript/javascript_while_loop.htm",
+  description: "Tutorials point tutorial covering while loops",
+  skill: skills[4][0],
+  subskill: skills[4][2]
+},
+{
+  title: "While loops docs",
+  contentType: "documentation",
+  URL: "http://www.w3schools.com/js/js_loop_while.asp",
+  description: "Documentation for while loops on W3 Schools",
+  skill: skills[4][0],
+  subskill: skills[4][2]
+},
+{
+  title: "Training JS #9: loop statement --while and do..while",
+  contentType: "kata",
+  URL: "http://www.codewars.com/kata/57216d4bcdd71175d6000560",
+  description: "Explanation of how to use and practice using do..while and while.",
+  skill: skills[4][0],
+  subskill: skills[4][2]
 }
 ]
