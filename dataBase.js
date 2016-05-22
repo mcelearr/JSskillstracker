@@ -2,7 +2,7 @@ var skills = [
   ['Basic Data Types','Numbers','Strings','Booleans'],
   ['Advanced Data Types', 'Arrays', 'Objects', 'Undefined and Null'],
   ['Operators', 'Arithmetic Operators', 'Logical Operators', 'Other Operators']
-  ['Functions','Basic','Encapsulation','Return'],
+  ['Functions','Basic','Function scope'],
   ['Looping', 'For Loop', 'While Loop', 'Break'],
   ['Control Flow', 'If Statements', 'Switch Statements', 'Ternary Operator'],
   ['Looping', 'For Loop', 'While Loop', 'Break'],
@@ -267,5 +267,29 @@ var content = [
   description: "Create a function that adds from two invocations. This requires an understanding of function scopes.",
   skill: skills[3][0],
   subskill: skills[3][2]
+},
+{
+  title: "Codecademy for loops tutorial",
+  contentType: "tutorial",
+  URL: "https://www.codecademy.com/courses/javascript-beginner-en-NhsaT/0/1",
+  description: "Codecademy tutorial covering for loops and how to iterate through arrays",
+  skill: skills[4][0],
+  subskill: skills[4][1]
+},
+{
+  title: "For loops docs",
+  contentType: "documentation",
+  URL: "http://www.w3schools.com/js/js_loop_for.asp",
+  description: "Documentation for for loops on W3 Schools",
+  skill: skills[4][0],
+  subskill: skills[4][1]
+},
+{
+  title: "Draw me a chessboard",
+  contentType: "kata",
+  URL: "http://www.codewars.com/kata/56242b89689c35449b000059/train/javascript",
+  description: "Your task is to write a function that takes two integers rows and columns and returns a chessboard pattern as a two dimensional array. Making a digital chessboard is an interesting way of visualising how loops can work together.",
+  skill: skills[4][0],
+  subskill: skills[4][1]
 }
 ]
