@@ -314,5 +314,61 @@ var content = [
   description: "Explanation of how to use and practice using do..while and while.",
   skill: skills[4][0],
   subskill: skills[4][2]
+},
+{
+  title: "Codecademy if statement tutorial",
+  contentType: "tutorial",
+  URL: "https://www.codecademy.com/en/courses/conditionals-in-javascript/1/1",
+  description: "Codecademy tutorial covering conditionals",
+  skill: skills[5][0],
+  subskill: skills[5][1]
+},
+{
+  title: "If else docs",
+  contentType: "tutorial",
+  URL: "http://www.w3schools.com/js/js_if_else.asp",
+  description: "Documentation for if else statements on W3 Schools",
+  skill: skills[5][0],
+  subskill: skills[5][1]
+},
+{
+  title: "Tube strike options calculator",
+  contentType: "kata",
+  URL: "http://www.codewars.com/kata/tube-strike-options-calculator",
+  description: "You must create a function which takes three parameters; walking distance home, distance the bus must travel, and the combined distance of walking from the office to the bus stop and from the bus stop to your house, and return the fastest option.",
+  skill: skills[5][0],
+  subskill: skills[5][1]
+},
+{
+  title: "Codecademy switch statement tutorial",
+  contentType: "tutorial",
+  URL: "https://www.codecademy.com/en/courses/conditionals-in-javascript/3/1",
+  description: "Codecademy tutorial covering switch statement",
+  skill: skills[5][0],
+  subskill: skills[5][2]
+},
+{
+  title: "Switch statement docs",
+  contentType: "tutorial",
+  URL: "http://www.w3schools.com/js/js_switch.asp",
+  description: "Documentation for switch statements on W3 Schools",
+  skill: skills[5][0],
+  subskill: skills[5][2]
+},
+{
+  title: "L1: Bartender, drinks!",
+  contentType: "kata",
+  URL: "http://www.codewars.com/kata/l1-bartender-drinks",
+  description: "Write a function getDrinkByProfession which serves up a drink appropriate for that person's profession",
+  skill: skills[5][0],
+  subskill: skills[5][2]
+},
+{
+  title: "Codecademy ternary operator tutorial",
+  contentType: "tutorial",
+  URL: "https://www.codecademy.com/courses/conditionals-in-javascript/4/1",
+  description: "Codecademy tutorial covering ternary operator",
+  skill: skills[5][0],
+  subskill: skills[5][3]
 }
 ]
