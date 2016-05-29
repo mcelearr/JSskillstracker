@@ -6,7 +6,7 @@ var skills = [
   ['Looping', 'For Loop', 'While Loop'],
   ['Control Flow', 'If Statements', 'Switch Statements', 'Ternary Operator'],
   ['Basic Objects', 'Object Literal (JSON)', 'Object Constructors', 'Inheritance and Prototypes'],
-  ['Array Methods', 'sort()', 'indexOf()', 'concat()', 'splice()'],
+  ['Array Methods', 'sort()', 'indexOf()', 'splice()'],
   ['String Methods', 'slice()', 'substring()', 'charAt()'],
   ['Higher-order Functions', 'map()', 'filter()', 'reduce()'],
   ['Object-oriented Programming', 'Classes and Instances', 'Getters and Setters', 'Polymorphism'],
@@ -450,5 +450,53 @@ var content = [
   description: "The toString() method has been disabled for booleans, numbers, arrays and objects. Your goal is to retrive toString() for the following data types.",
   skill: skills[6][0],
   subskill: skills[6][3]
+},
+{
+  title: "Array.sort method docs",
+  contentType: "documentation",
+  URL: "http://www.w3schools.com/jsref/jsref_sort.asp",
+  description: "Documentation for Array.sort method on W3 Schools",
+  skill: skills[7][0],
+  subskill: skills[7][1]
+},
+{
+  title: "Suzuki needs help lining up his students!",
+  contentType: "kata",
+  URL: "http://www.codewars.com/kata/suzuki-needs-help-lining-up-his-students",
+  description: "You will be given a string of student names. Sort them and return a list of names in descending order.",
+  skill: skills[7][0],
+  subskill: skills[7][1]
+},
+{
+  title: "Array.indexOf method docs",
+  contentType: "documentation",
+  URL: "https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf",
+  description: "Documentation for Array.indexOf on Mozilla Developer Network",
+  skill: skills[7][0],
+  subskill: skills[7][2]
+},
+{
+  title: "Training JS #31: methods of arrayObject---isArray() indexOf() and toString()",
+  contentType: "kata",
+  URL: "http://www.codewars.com/kata/training-js-number-31-methods-of-arrayobject-isarray-indexof-and-tostring",
+  description: "Kata which covers Array.indexOf and two other methods, isArray and toString.",
+  skill: skills[7][0],
+  subskill: skills[7][2]
+},
+{
+  title: "Array.push method docs",
+  contentType: "documentation",
+  URL: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push",
+  description: "Documentation for Array.push on Mozilla Developer Network",
+  skill: skills[7][0],
+  subskill: skills[7][3]
+},
+{
+  title: "Training JS #23: methods of arrayObject---push(), pop(), shift() and unshift()",
+  contentType: "kata",
+  URL: "http://www.codewars.com/kata/training-js-number-23-methods-of-arrayobject-push-pop-shift-and-unshift",
+  description: "Kata which covers Array.indexOf and two other methods, pop and unShift.",
+  skill: skills[7][0],
+  subskill: skills[7][3]
 }
 ]
