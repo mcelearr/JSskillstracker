@@ -6,8 +6,8 @@ var skills = [
   ['Looping', 'For Loop', 'While Loop'],
   ['Control Flow', 'If Statements', 'Switch Statements', 'Ternary Operator'],
   ['Basic Objects', 'Object Literal (JSON)', 'Object Constructors', 'Inheritance and Prototypes'],
-  ['Array Methods', 'sort()', 'indexOf()', 'splice()'],
-  ['String Methods', 'slice()', 'substring()', 'charAt()'],
+  ['Array Methods', 'sort()', 'indexOf()', 'push()'],
+  ['String Methods', 'slice()', 'length()', 'concat()'],
   ['Higher-order Functions', 'map()', 'filter()', 'reduce()'],
   ['Object-oriented Programming', 'Classes and Instances', 'Getters and Setters', 'Polymorphism'],
   ['In-built Objects', 'Document', 'Math', 'Date'],
@@ -498,5 +498,53 @@ var content = [
   description: "Kata which covers Array.indexOf and two other methods, pop and unShift.",
   skill: skills[7][0],
   subskill: skills[7][3]
+},
+{
+  title: "String.slice method docs",
+  contentType: "documentation",
+  URL: "https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/String/slice",
+  description: "Documentation for String.slice method on Mozilla Developer Network",
+  skill: skills[8][0],
+  subskill: skills[8][1]
+},
+{
+  title: "Training JS #16: Methods of String object--slice(), substring() and substr()",
+  contentType: "kata",
+  URL: "http://www.codewars.com/kata/training-js-number-16-methods-of-string-object-slice-substring-and-substr",
+  description: "Kata which covers String.slice and two other methods, substring and substr.",
+  skill: skills[8][0],
+  subskill: skills[8][1]
+},
+{
+  title: "String.length method docs",
+  contentType: "documentation",
+  URL: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/length",
+  description: "Documentation for String.length on Mozilla Developer Network",
+  skill: skills[8][0],
+  subskill: skills[8][2]
+},
+{
+  title: "Maximum Length Difference",
+  contentType: "kata",
+  URL: "http://www.codewars.com/kata/maximum-length-difference",
+  description: "Kata which covers Array.indexOf and two other methods, isArray and toString.",
+  skill: skills[8][0],
+  subskill: skills[8][2]
+},
+{
+  title: "String.concat method docs",
+  contentType: "documentation",
+  URL: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/concat",
+  description: "Documentation for String.concat on Mozilla Developer Network",
+  skill: skills[8][0],
+  subskill: skills[8][3]
+},
+{
+  title: "Training JS #18: Methods of String object--concat() split() and its good friend join(",
+  contentType: "kata",
+  URL: "http://www.codewars.com/kata/57280481e8118511f7000ffa",
+  description: "Kata which covers String.concat and two other methods, split and join.",
+  skill: skills[8][0],
+  subskill: skills[8][3]
 }
 ]
