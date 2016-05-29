@@ -546,5 +546,53 @@ var content = [
   description: "Kata which covers String.concat and two other methods, split and join.",
   skill: skills[8][0],
   subskill: skills[8][3]
+},
+{
+  title: "Array.map method docs",
+  contentType: "documentation",
+  URL: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map",
+  description: "Documentation for Array.map method on Mozilla Developer Network",
+  skill: skills[9][0],
+  subskill: skills[9][1]
+},
+{
+  title: "Training JS #26: methods of arrayObject---map()",
+  contentType: "kata",
+  URL: "http://www.codewars.com/kata/572fdeb4380bb703fc00002c",
+  description: "Write a function that takes a string and returns a character "|" into the middle of the string.",
+  skill: skills[9][0],
+  subskill: skills[9][1]
+},
+{
+  title: "Array.filter method docs",
+  contentType: "documentation",
+  URL: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter",
+  description: "Documentation for Array.filter method on Mozilla Developer Network",
+  skill: skills[9][0],
+  subskill: skills[9][2]
+},
+{
+  title: "Training JS #27: methods of arrayObject---filter()",
+  contentType: "kata",
+  URL: "http://www.codewars.com/kata/572fdeb4380bb703fc00002c",
+  description: "Write a function that takes an array of grade scores and returns an object which divides the grades into different categories.",
+  skill: skills[9][0],
+  subskill: skills[9][2]
+},
+{
+  title: "Array.reduce method docs",
+  contentType: "documentation",
+  URL: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce",
+  description: "Documentation for Array.reduce method on Mozilla Developer Network",
+  skill: skills[9][0],
+  subskill: skills[9][3]
+},
+{
+  title: "Training JS #30: methods of arrayObject---reduce() and reduceRight()",
+  contentType: "kata",
+  URL: "http://www.codewars.com/kata/573156709a231dcec9000ee8",
+  description: "Write a function that returns the product of an array of numbers.",
+  skill: skills[9][0],
+  subskill: skills[9][3]
 }
 ]
