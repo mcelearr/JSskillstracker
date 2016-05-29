@@ -325,7 +325,7 @@ var content = [
 },
 {
   title: "If else docs",
-  contentType: "tutorial",
+  contentType: "documentation",
   URL: "http://www.w3schools.com/js/js_if_else.asp",
   description: "Documentation for if else statements on W3 Schools",
   skill: skills[5][0],
@@ -349,7 +349,7 @@ var content = [
 },
 {
   title: "Switch statement docs",
-  contentType: "tutorial",
+  contentType: "documentation",
   URL: "http://www.w3schools.com/js/js_switch.asp",
   description: "Documentation for switch statements on W3 Schools",
   skill: skills[5][0],
@@ -368,6 +368,14 @@ var content = [
   contentType: "tutorial",
   URL: "https://www.codecademy.com/courses/conditionals-in-javascript/4/1",
   description: "Codecademy tutorial covering ternary operator",
+  skill: skills[5][0],
+  subskill: skills[5][3]
+},
+{
+  title: "Ternary operator docs",
+  contentType: "documentation",
+  URL: "https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Operators/Conditional_Operator",
+  description: "Documentation for ternary operators on Mozilla Developer Network",
   skill: skills[5][0],
   subskill: skills[5][3]
 }
