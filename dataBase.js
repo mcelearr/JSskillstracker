@@ -378,5 +378,29 @@ var content = [
   description: "Documentation for ternary operators on Mozilla Developer Network",
   skill: skills[5][0],
   subskill: skills[5][3]
+},
+{
+  title: "Codecademy JSON tutorial",
+  contentType: "tutorial",
+  URL: "https://www.codecademy.com/courses/javascript-beginner-en-xTAfX/0/1",
+  description: "Codecademy tutorial covering JSON",
+  skill: skills[6][0],
+  subskill: skills[6][1]
+},
+{
+  title: "JSON docs",
+  contentType: "documentation",
+  URL: "http://www.w3schools.com/json/",
+  description: "Documentation for JSON on W3 Schools",
+  skill: skills[6][0],
+  subskill: skills[6][1]
+},
+{
+  title: "Configure package json for a node application",
+  contentType: "kata",
+  URL: "http://www.codewars.com/kata/configure-package-json-for-a-node-application",
+  description: "Create a package.json configuration",
+  skill: skills[6][0],
+  subskill: skills[6][1]
 }
 ]
