@@ -426,5 +426,29 @@ var content = [
   description: "In this kata you will write a method which returns a quote for a give quantity of items. Stock items are represented as a list of objects.",
   skill: skills[6][0],
   subskill: skills[6][2]
+},
+{
+  title: "Codecademy prototype and inheritance tutorial",
+  contentType: "tutorial",
+  URL: "https://www.codecademy.com/courses/objects-ii/2/4?curriculum_id=506324b3a7dffd00020bf661",
+  description: "Codecademy tutorial covering prototypes and inheritance",
+  skill: skills[6][0],
+  subskill: skills[6][3]
+},
+{
+  title: "Object prototype docs",
+  contentType: "documentation",
+  URL: "https://developer.moziGreedy seller's quoteslla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Object/prototype",
+  description: "Documentation for object prototypes on Mozilla Developer Network",
+  skill: skills[6][0],
+  subskill: skills[6][3]
+},
+{
+  title: "Strings, strings, strings (Easy)",
+  contentType: "kata",
+  URL: "http://www.codewars.com/kata/strings-strings-strings-easy",
+  description: "The toString() method has been disabled for booleans, numbers, arrays and objects. Your goal is to retrive toString() for the following data types.",
+  skill: skills[6][0],
+  subskill: skills[6][3]
 }
 ]
