@@ -402,5 +402,29 @@ var content = [
   description: "Create a package.json configuration",
   skill: skills[6][0],
   subskill: skills[6][1]
+},
+{
+  title: "Codecademy object contructor tutorial",
+  contentType: "tutorial",
+  URL: "https://www.codecademy.com/courses/spencer-sandbox/3/1",
+  description: "Codecademy tutorial covering object constructors",
+  skill: skills[6][0],
+  subskill: skills[6][2]
+},
+{
+  title: "Object contructor docs",
+  contentType: "documentation",
+  URL: "https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Object/constructor",
+  description: "Documentation for object constructors on Mozilla Developer Network",
+  skill: skills[6][0],
+  subskill: skills[6][2]
+},
+{
+  title: "Greedy seller's quotes",
+  contentType: "kata",
+  URL: "http://www.codewars.com/kata/greedy-sellers-quotes",
+  description: "In this kata you will write a method which returns a quote for a give quantity of items. Stock items are represented as a list of objects.",
+  skill: skills[6][0],
+  subskill: skills[6][2]
 }
 ]
