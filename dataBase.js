@@ -9,7 +9,7 @@ var skills = [
   ['Array Methods', 'sort()', 'indexOf()', 'push()'],
   ['String Methods', 'slice()', 'length()', 'concat()'],
   ['Higher-order Functions', 'map()', 'filter()', 'reduce()'],
-  ['Object-oriented Programming', 'Classes and Instances', 'Getters and Setters', 'Polymorphism'],
+  ['Object-oriented Programming', 'Classes and Instances', 'Encapsulation and Privacy'],
   ['In-built Objects', 'Document', 'Math', 'Date'],
   ['Style', 'Naming Conventions', 'Indenting', 'Comments'],
   ['ECMA 6', 'Fat Arrows', 'Template Strings', 'let', 'const', 'Symbols'],
@@ -594,5 +594,29 @@ var content = [
   description: "Write a function that returns the product of an array of numbers.",
   skill: skills[9][0],
   subskill: skills[9][3]
+},
+{
+  title: "Codecademy classes and instances tutorial",
+  contentType: "tutorial",
+  URL: "https://www.codecademy.com/courses/intro-to-object-oriented-programming/0/1",
+  description: "Codecademy tutorial covering classes and instances",
+  skill: skills[10][0],
+  subskill: skills[10][1]
+},
+{
+  title: "Class and instance docs",
+  contentType: "documentation",
+  URL: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes",
+  description: "Documentation for class and instance on Mozilla Developer Network",
+  skill: skills[10][0],
+  subskill: skills[10][1]
+},
+{
+  title: "Fun with ES6 Classes #2 - Animals and Inheritance",
+  contentType: "kata",
+  URL: "http://www.codewars.com/kata/fun-with-es6-classes-number-2-animals-and-inheritance",
+  description: "Define the shark, cat and dog classes that inherit from Animal using the extends keyword.",
+  skill: skills[10][0],
+  subskill: skills[10][1]
 }
 ]
