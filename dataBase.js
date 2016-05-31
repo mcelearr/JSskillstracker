@@ -618,5 +618,29 @@ var content = [
   description: "Define the shark, cat and dog classes that inherit from Animal using the extends keyword.",
   skill: skills[10][0],
   subskill: skills[10][1]
+},
+{
+  title: "Codecademy encapsulation and privacy tutorial",
+  contentType: "tutorial",
+  URL: "https://www.codecademy.com/en/courses/intro-to-object-oriented-programming/1/1",
+  description: "Codecademy tutorial covering encapsulation and privacy",
+  skill: skills[10][0],
+  subskill: skills[10][2]
+},
+{
+  title: "Douglas Crockford's private Members in JavaScript",
+  contentType: "tutorial",
+  URL: "http://javascript.crockford.com/private.html",
+  description: "Douglas Crockford tutorial on public and private properties of objects",
+  skill: skills[10][0],
+  subskill: skills[10][2]
+},
+{
+  title: "Can you keep a secret?",
+  contentType: "kata",
+  URL: "http://www.codewars.com/kata/can-you-keep-a-secret",
+  description: "Implement a function createSecretHolder(secret) which accepts any value as secret and returns an object with ONLY two methods, getSecret() which returns the secret and setSecret() which sets the secret.",
+  skill: skills[10][0],
+  subskill: skills[10][2]
 }
 ]
