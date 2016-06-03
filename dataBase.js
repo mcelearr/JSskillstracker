@@ -671,7 +671,7 @@ var content = [
   title: "Math object docs",
   contentType: "documentation",
   URL: "https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Math",
-  description: "Documentation for document object docs on Mozilla Developer Network",
+  description: "Documentation for Document object docs on Mozilla Developer Network",
   skill: skills[11][0],
   subskill: skills[11][2]
 },
@@ -682,5 +682,21 @@ var content = [
   description: "In this lesson we learn three methods of Math: pow() sqrt() and cbrt()",
   skill: skills[11][0],
   subskill: skills[11][2]
+},
+{
+  title: "Codecademy Date object tutorial",
+  contentType: "tutorial",
+  URL: "https://www.codecademy.com/courses/the-date-object/0/1",
+  description: "Tutorial covering the Date object on Codecademy",
+  skill: skills[11][0],
+  subskill: skills[11][3]
+},
+{
+  title: "Date object docs",
+  contentType: "documentation",
+  URL: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date",
+  description: "Documentation for Date object docs on Mozilla Developer Network",
+  skill: skills[11][0],
+  subskill: skills[11][3]
 }
 ]
