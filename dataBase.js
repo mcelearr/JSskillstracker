@@ -642,5 +642,45 @@ var content = [
   description: "Implement a function createSecretHolder(secret) which accepts any value as secret and returns an object with ONLY two methods, getSecret() which returns the secret and setSecret() which sets the secret.",
   skill: skills[10][0],
   subskill: skills[10][2]
+},
+{
+  title: "Document Object Modal tutorial",
+  contentType: "tutorial",
+  URL: "https://dom-tutorials.appspot.com/static/index.html",
+  description: "Tutorial covering Document Object Modal",
+  skill: skills[11][0],
+  subskill: skills[11][1]
+},
+{
+  title: "Document object docs",
+  contentType: "documentation",
+  URL: "http://www.w3schools.com/js/js_htmldom_document.asp",
+  description: "Documentation for document object docs on W3 Schools",
+  skill: skills[11][0],
+  subskill: skills[11][1]
+},
+{
+  title: "Codecademy Math object tutorial",
+  contentType: "tutorial",
+  URL: "https://www.codecademy.com/en/courses/javascript-beginner-en-ws7tv/0/5",
+  description: "Tutorial covering the Math object on Codecademy",
+  skill: skills[11][0],
+  subskill: skills[11][2]
+},
+{
+  title: "Math object docs",
+  contentType: "documentation",
+  URL: "https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Math",
+  description: "Documentation for document object docs on Mozilla Developer Network",
+  skill: skills[11][0],
+  subskill: skills[11][2]
+},
+{
+  title: "Training JS #34: methods of Math---pow() sqrt() and cbrt()",
+  contentType: "kata",
+  URL: "http://www.codewars.com/kata/training-js-number-34-methods-of-math-pow-sqrt-and-cbrt",
+  description: "In this lesson we learn three methods of Math: pow() sqrt() and cbrt()",
+  skill: skills[11][0],
+  subskill: skills[11][2]
 }
 ]
