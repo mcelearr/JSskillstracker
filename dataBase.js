@@ -12,9 +12,9 @@ var skills = [
   ['Object-oriented Programming', 'Classes and Instances', 'Encapsulation and Privacy'],
   ['In-built Objects', 'Document', 'Math', 'Date'],
   ['ECMA 6', 'Fat Arrows', 'Template Strings', 'let', 'const', 'Symbols'],
+  ['Functional Programming', 'Functional programming principles', 'Closures', 'Promises'],
   ['JS Libraries', 'JQuery', 'Bootstrap', 'Materialize'],
-  ['JS Frameworks', 'Angular', 'React'],
-  ['Functional Programming', 'Closures', 'Promises']
+  ['JS Frameworks', 'Angular', 'React']
 ];
 
 var content = [
@@ -737,5 +737,21 @@ var content = [
   description: "Documentation for Symbols on Mozilla Developer Network",
   skill: skills[12][0],
   subskill: skills[12][5]
+},
+{
+  title: "JavaScript functional programming: 9 free beginner exercises",
+  contentType: "tutorial",
+  URL: "rmion.com/javascript-functional-programming-free-beginner-exercises/",
+  description: "Test your knowledge of variables, operations, control flow and higher-order functions in JavaScript",
+  skill: skills[13][0],
+  subskill: skills[13][1]
+},
+{
+  title: "The Two Pillars of JavaScript — Pt 2: Functional Programming",
+  contentType: "tutorial",
+  URL: "https://medium.com/javascript-scene/the-two-pillars-of-javascript-pt-2-functional-programming-a63aa53a41a4#.94sw7qd0q",
+  description: "Excellent functional programming tutorial on medium",
+  skill: skills[13][0],
+  subskill: skills[13][1]
 }
 ]
