@@ -11,7 +11,6 @@ var skills = [
   ['Higher-order Functions', 'map()', 'filter()', 'reduce()'],
   ['Object-oriented Programming', 'Classes and Instances', 'Encapsulation and Privacy'],
   ['In-built Objects', 'Document', 'Math', 'Date'],
-  ['Style', 'Naming Conventions', 'Indenting', 'Comments'],
   ['ECMA 6', 'Fat Arrows', 'Template Strings', 'let', 'const', 'Symbols'],
   ['JS Libraries', 'JQuery', 'Bootstrap', 'Materialize'],
   ['JS Frameworks', 'Angular', 'React'],
@@ -655,7 +654,7 @@ var content = [
   title: "Document object docs",
   contentType: "documentation",
   URL: "http://www.w3schools.com/js/js_htmldom_document.asp",
-  description: "Documentation for document object docs on W3 Schools",
+  description: "Documentation for document object on W3 Schools",
   skill: skills[11][0],
   subskill: skills[11][1]
 },
@@ -671,7 +670,7 @@ var content = [
   title: "Math object docs",
   contentType: "documentation",
   URL: "https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Math",
-  description: "Documentation for Document object docs on Mozilla Developer Network",
+  description: "Documentation for Document object on Mozilla Developer Network",
   skill: skills[11][0],
   subskill: skills[11][2]
 },
@@ -695,8 +694,48 @@ var content = [
   title: "Date object docs",
   contentType: "documentation",
   URL: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date",
-  description: "Documentation for Date object docs on Mozilla Developer Network",
+  description: "Documentation for Date object on Mozilla Developer Network",
   skill: skills[11][0],
   subskill: skills[11][3]
+},
+{
+  title: "An Introduction to JavaScript ES6 Arrow Functions",
+  contentType: "tutorial",
+  URL: "https://strongloop.com/strongblog/an-introduction-to-javascript-es6-arrow-functions/",
+  description: "Tutorial covering the fat arrows used to define functions in ES6",
+  skill: skills[12][0],
+  subskill: skills[12][1]
+},
+{
+  title: "Tutorial covering template literals in ES6",
+  contentType: "tutorial",
+  URL: "http://exploringjs.com/es6/ch_template-literals.html",
+  description: "ES6 has two new kinds of literals: template literals and tagged template literals.",
+  skill: skills[12][0],
+  subskill: skills[12][2]
+},
+{
+  title: "let statement docs",
+  contentType: "documentation",
+  URL: "https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Statements/let",
+  description: "Documentation for let statement on Mozilla Developer Network",
+  skill: skills[12][0],
+  subskill: skills[12][3]
+},
+{
+  title: "const statement docs",
+  contentType: "documentation",
+  URL: "https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Statements/const",
+  description: "Documentation for const statement on Mozilla Developer Network",
+  skill: skills[12][0],
+  subskill: skills[12][4]
+},
+{
+  title: "Symbol statement docs",
+  contentType: "documentation",
+  URL: "https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Symbol",
+  description: "Documentation for Symbols on Mozilla Developer Network",
+  skill: skills[12][0],
+  subskill: skills[12][5]
 }
 ]
