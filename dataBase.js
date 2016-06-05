@@ -12,7 +12,7 @@ var skills = [
   ['Object-oriented Programming', 'Classes and Instances', 'Encapsulation and Privacy'],
   ['In-built Objects', 'Document', 'Math', 'Date'],
   ['ECMA 6', 'Fat Arrows', 'Template Strings', 'let', 'const', 'Symbols'],
-  ['Functional Programming', 'Functional programming principles', 'Closures', 'Promises'],
+  ['Functional Programming', 'Functional programming principles', 'Closures', 'Pure functions'],
   ['JS Libraries', 'JQuery', 'Bootstrap', 'Materialize'],
   ['JS Frameworks', 'Angular', 'React']
 ];
@@ -753,5 +753,37 @@ var content = [
   description: "Excellent functional programming tutorial on medium",
   skill: skills[13][0],
   subskill: skills[13][1]
+},
+{
+  title: "Lexical scoping and closures docs",
+  contentType: "documentation",
+  URL: "https://developer.mozilla.org/en/docs/Web/JavaScript/Closures",
+  description: "Closures are functions that refer to independent (free) variables (variables that are used locally, but defined in an enclosing scope).",
+  skill: skills[13][0],
+  subskill: skills[13][2]
+},
+{
+  title: "JavaScript Closures 101- they're not magic",
+  contentType: "tutorial",
+  URL: "http://www.javascriptkit.com/javatutors/closures.shtml",
+  description: "Tutorial on closures",
+  skill: skills[13][0],
+  subskill: skills[13][2]
+},
+{
+  title: "An Introduction to Reasonably Pure Functional Programming",
+  contentType: "tutorial",
+  URL: "https://www.sitepoint.com/an-introduction-to-reasonably-pure-functional-programming/",
+  description: "Tutorial on how to write pure functions using javascript",
+  skill: skills[13][0],
+  subskill: skills[13][3]
+},
+{
+  title: "Redux: Pure and impure functions",
+  contentType: "tutorial",
+  URL: "https://egghead.io/lessons/javascript-redux-pure-and-impure-functions",
+  description: "Tutorial on redux pure and impure functions on egghead.io",
+  skill: skills[13][0],
+  subskill: skills[13][3]
 }
 ]
