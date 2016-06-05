@@ -785,5 +785,21 @@ var content = [
   description: "Tutorial on redux pure and impure functions on egghead.io",
   skill: skills[13][0],
   subskill: skills[13][3]
+},
+{
+  title: "Codecademy JQuery tutorial",
+  contentType: "tutorial",
+  URL: "https://www.codecademy.com/learn/jquery",
+  description: "Learn how to make your websites interactive and create animations by using jQuery.",
+  skill: skills[14][0],
+  subskill: skills[14][1]
+},
+{
+  title: "JQuery tutorial and docs",
+  contentType: "tutorial",
+  URL: "http://www.w3schools.com/jquery/",
+  description: "Tutorial and documentation for JQuery on W3 Schools",
+  skill: skills[14][0],
+  subskill: skills[14][1]
 }
 ]
