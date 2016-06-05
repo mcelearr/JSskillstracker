@@ -801,5 +801,21 @@ var content = [
   description: "Tutorial and documentation for JQuery on W3 Schools",
   skill: skills[14][0],
   subskill: skills[14][1]
+},
+{
+  title: "Tutorial Republic Bootstrap tutorial",
+  contentType: "tutorial",
+  URL: "http://www.tutorialrepublic.com/twitter-bootstrap-tutorial/",
+  description: "Bootstrap is the most popular and powerful front-end (HTML, CSS, and JS) framework for faster and easier responsive web development.",
+  skill: skills[14][0],
+  subskill: skills[14][2]
+},
+{
+  title: "Bootstrap tutorial and docs",
+  contentType: "tutorial",
+  URL: "http://www.w3schools.com/bootstrap/",
+  description: "Tutorial and documentation for Bootstrap on W3 Schools",
+  skill: skills[14][0],
+  subskill: skills[14][2]
 }
 ]
