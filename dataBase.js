@@ -817,5 +817,21 @@ var content = [
   description: "Tutorial and documentation for Bootstrap on W3 Schools",
   skill: skills[14][0],
   subskill: skills[14][2]
+},
+{
+  title: "Materialize docs",
+  contentType: "documentation",
+  URL: "http://materializecss.com/",
+  description: "A modern responsive front-end framework based on Google's Material Design",
+  skill: skills[14][0],
+  subskill: skills[14][3]
+},
+{
+  title: "Materialize docs",
+  contentType: "tutorial",
+  URL: "http://www.tutorialspoint.com/materialize/",
+  description: "Documentation for Materialize on Tutorials Point",
+  skill: skills[14][0],
+  subskill: skills[14][3]
 }
 ]
