@@ -849,5 +849,21 @@ var content = [
   description: "Learn how to easily build single-page web applications using this popular JavaScript framework.",
   skill: skills[15][0],
   subskill: skills[15][1]
+},
+{
+  title: "ReactJS docs",
+  contentType: "documentation",
+  URL: "https://facebook.github.io/react/docs/top-level-api.html",
+  description: "Dcoumentation for ReactJS",
+  skill: skills[15][0],
+  subskill: skills[15][2]
+},
+{
+  title: "Codecademy tutorial on angular JS",
+  contentType: "tutorial",
+  URL: "https://facebook.github.io/react/docs/tutorial.html",
+  description: "React is the premier way to build big, fast Web apps with JavaScript. ",
+  skill: skills[15][0],
+  subskill: skills[15][2]
 }
 ]
