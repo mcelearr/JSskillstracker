@@ -827,11 +827,27 @@ var content = [
   subskill: skills[14][3]
 },
 {
-  title: "Materialize docs",
+  title: "Materialize tutorial on Tutorials Point",
   contentType: "tutorial",
   URL: "http://www.tutorialspoint.com/materialize/",
-  description: "Documentation for Materialize on Tutorials Point",
+  description: "Materialize is a UI component library created with CSS, JavaScript, and HTML, which enables simple resposivness. It is the framework used by JS Radar.",
   skill: skills[14][0],
   subskill: skills[14][3]
+},
+{
+  title: "AngularJS docs",
+  contentType: "documentation",
+  URL: "https://docs.angularjs.org/api",
+  description: "Dcoumentation for AngularJS",
+  skill: skills[15][0],
+  subskill: skills[15][1]
+},
+{
+  title: "Codecademy tutorial on angular JS",
+  contentType: "tutorial",
+  URL: "https://www.codecademy.com/learn/learn-angularjs",
+  description: "Learn how to easily build single-page web applications using this popular JavaScript framework.",
+  skill: skills[15][0],
+  subskill: skills[15][1]
 }
 ]
