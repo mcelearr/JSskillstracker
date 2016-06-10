@@ -1,7 +1,7 @@
 var skills = [
   ['Basic Data Types','Numbers','Strings','Booleans'],
   ['Advanced Data Types', 'Arrays', 'Objects', 'Undefined and Null'],
-  ['Operators', 'Arithmetic Operators', 'Logical Operators', 'Other Operators']
+  ['Operators', 'Arithmetic Operators', 'Logical Operators', 'Other Operators'],
   ['Functions','Basic','Function scope'],
   ['Looping', 'For Loop', 'While Loop'],
   ['Control Flow', 'If Statements', 'Switch Statements', 'Ternary Operator'],
