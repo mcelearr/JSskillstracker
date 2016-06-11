@@ -160,25 +160,22 @@ function RadarChart(id, data, options) {
 		.style("fill", function(d,i) { return cfg.color(i); })
 		.style("fill-opacity", cfg.opacityArea)
 
-		///// RMc 10/03 ///////
-		///// I've turned off the mouseover opacity change ///////
-
-		// .on('mouseover', function (d,i){
-		// 	//Dim all blobs
-		// 	d3.selectAll(".radarArea")
-		// 		.transition().duration(200)
-		// 		.style("fill-opacity", 0.1);
-		// 	//Bring back the hovered over blob
-		// 	d3.select(this)
-		// 		.transition().duration(200)
-		// 		.style("fill-opacity", 0.7);
-		// })
-		// .on('mouseout', function(){
-		// 	//Bring back all blobs
-		// 	d3.selectAll(".radarArea")
-		// 		.transition().duration(200)
-		// 		.style("fill-opacity", cfg.opacityArea);
-		// });
+		.on('mouseover', function (d,i){
+			//Dim all blobs
+			d3.selectAll(".radarArea")
+				.transition().duration(200)
+				.style("fill-opacity", 0.1);
+			//Bring back the hovered over blob
+			d3.select(this)
+				.transition().duration(200)
+				.style("fill-opacity", 0.7);
+		})
+		.on('mouseout', function(){
+			//Bring back all blobs
+			d3.selectAll(".radarArea")
+				.transition().duration(200)
+				.style("fill-opacity", cfg.opacityArea);
+		});
 
 	//Create the outlines
 	blobWrapper.append("path")

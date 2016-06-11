@@ -38,6 +38,24 @@ function data(){
             {axis: user.skill13.title, value: user.getAverage(user.skill13)},
             {axis: user.skill14.title, value: user.getAverage(user.skill14)},
             {axis: user.skill15.title, value: user.getAverage(user.skill15)}
+          ],
+          [
+            {axis: user.skill0.title, value: 1},
+            {axis: user.skill1.title, value: 1},
+            {axis: user.skill2.title, value: 1},
+            {axis: user.skill3.title, value: 1},
+            {axis: user.skill4.title, value: 1},
+            {axis: user.skill5.title, value: 1},
+            {axis: user.skill6.title, value: 1},
+            {axis: user.skill7.title, value: 1},
+            {axis: user.skill8.title, value: 1},
+            {axis: user.skill9.title, value: 1},
+            {axis: user.skill10.title, value: 1},
+            {axis: user.skill11.title, value: 1},
+            {axis: user.skill12.title, value: 1},
+            {axis: user.skill13.title, value: 1},
+            {axis: user.skill14.title, value: 1},
+            {axis: user.skill15.title, value: 1}
           ]
         ];
   };
