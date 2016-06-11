@@ -46,16 +46,16 @@ function data(){
             {axis: user.skill3.title, value: 1},
             {axis: user.skill4.title, value: 1},
             {axis: user.skill5.title, value: 1},
-            {axis: user.skill6.title, value: 1},
+            {axis: user.skill6.title, value: 2/3},
             {axis: user.skill7.title, value: 1},
             {axis: user.skill8.title, value: 1},
-            {axis: user.skill9.title, value: 1},
-            {axis: user.skill10.title, value: 1},
-            {axis: user.skill11.title, value: 1},
-            {axis: user.skill12.title, value: 1},
-            {axis: user.skill13.title, value: 1},
+            {axis: user.skill9.title, value: 1/3},
+            {axis: user.skill10.title, value: 2/3},
+            {axis: user.skill11.title, value: 2/3},
+            {axis: user.skill12.title, value: 1/5},
+            {axis: user.skill13.title, value: 1/3},
             {axis: user.skill14.title, value: 1},
-            {axis: user.skill15.title, value: 1}
+            {axis: user.skill15.title, value: 0}
           ]
         ];
   };
