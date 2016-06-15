@@ -20,13 +20,15 @@ var margin = {top: 100, right: 100, bottom: 100, left: 100},
 
 
 function data(){
-  return [
-          [
-            {axis: user.skill0.title, value: user.getAverage(user.skill0)},
-            {axis: user.skill1.title, value: user.getAverage(user.skill1)},
-            {axis: user.skill2.title, value: user.getAverage(user.skill2)}
-          ]
-        ];
+  var charts = [];
+  for (i=0; i<users.length; i++){
+    var chart = [], currUser = users[i];
+    for (j=0;j<Object.keys(user).length; j++){
+      chart.push({axis: currUser[`skill${j}`].title, value: currUser.getAverage(currUser[`skill${j}`])});
+    }
+    charts.push(chart);
+  }
+  return charts;
   };
 
 //////////////////////////////////////////////////////////////
