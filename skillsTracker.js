@@ -29,6 +29,7 @@ function data(){
     charts.push(chart);
   }
   return charts;
+
   };
 
 //////////////////////////////////////////////////////////////
