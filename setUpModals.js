@@ -9,7 +9,7 @@
     var nodeContent = createDefinedElement('div', 'className=modal-content');
     nodeContent.appendChild(h4)
     nodeContent.appendChild(ul)
-    //filter all content for current cubskill content
+    //filter all content for current subskill content
     var currContent = content.filter(function(el){if (el.subskill == t) return el});
     //generate elements for current subskill content
     if (currContent.length > 0) {// if content is available for current subskill
@@ -17,12 +17,10 @@
       currContent.map(function(c){
         var node = createDefinedElement('div');
         node.style.backgroundColor = '#efefef';
+        var link = createDefinedElement('a', `href=${c.URL}`);
         var title = createDefinedElement('h5', `innerHTML=${c.title}`);
-        var contentType = createDefinedElement('p', `innerHTML=${c.contentType}`);
-        var link = createDefinedElement('a', `href=${c.URL}`, `innerHTML=${c.description}`);
         var space = document.createElement('br');
-        node.appendChild(title);
-        node.appendChild(contentType);
+        link.appendChild(title);
         node.appendChild(link);
         nodeContent.appendChild(node);
         nodeContent.appendChild(space);
