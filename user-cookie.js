@@ -1,6 +1,6 @@
 
-function User(){
-  var obj = JSON.parse(document.cookie.split('=')[1]);
+function User(ghost){
+  var obj = ghost || JSON.parse(document.cookie.split('=')[1]);
   for (prop in obj){
     this[prop] = obj[prop];
   };
@@ -59,5 +59,6 @@ function setCookie(){
   };
 };
 setCookie();
-var user = new User();
+var user = new User(), ghostRory = new User(mcelearr), ghostAndrew = new User(coudrew);
+var users = [ghostRory, ghostAndrew, user];
 console.log(user);
